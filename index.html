@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class 8 English | Unit 8A: Dr. Dwarakanath Kotnis (Pages 123–135)</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Telugu', 'sans-serif'],
+            telugu: ['Noto Sans Telugu', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Telugu', sans-serif;
+      background-color: #f8fafc;
+    }
+    .telugu-box {
+      font-family: 'Noto Sans Telugu', 'Inter', sans-serif;
+      line-height: 1.85;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .vocab-pill {
+      background: linear-gradient(120deg, #fef08a 0%, #fde047 100%);
+      padding: 1px 7px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      border-bottom: 2px dashed #b45309;
+      color: #78350f;
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+    .vocab-pill:hover {
+      transform: translateY(-1px);
+    }
+    .main-clause-pill {
+      background-color: #dcfce7;
+      color: #14532d;
+      border-bottom: 3px solid #16a34a;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    .sub-clause-pill {
+      background-color: #dbeafe;
+      color: #1e3a8a;
+      border-bottom: 3px dashed #2563eb;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    .conj-pill {
+      background-color: #fef3c7;
+      color: #92400e;
+      border: 1px solid #f59e0b;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body class="text-slate-800 pb-24">
+
+  <!-- STICKY HEADER WITH LIVE SCREEN TIME & SCORE TRACKER -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-red-900 via-rose-900 to-amber-900 text-white shadow-xl">
+    <div class="max-w-5xl mx-auto px-3 sm:px-6 py-2.5">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <!-- Brand & Title -->
+        <div class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-extrabold text-lg shadow-md">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-[11px] uppercase tracking-wider bg-white/15 px-2 py-0.5 rounded-full font-semibold text-amber-300 border border-white/20">Class 8 • Unit 8 (A Reading)</span>
+              <span class="text-[11px] text-amber-200 hidden sm:inline">Pages 123–135 • Gratitude</span>
+            </div>
+            <h1 class="text-base sm:text-lg font-extrabold leading-tight">Dr. Dwarakanath Kotnis (డా. ద్వారకానాథ్ కోట్నిస్)</h1>
+          </div>
+        </div>
+
+        <!-- Live Screen Timer, Score & Quick Submit -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div class="bg-slate-950/60 border border-amber-400/40 rounded-xl px-3 py-1.5 flex items-center gap-2 shadow-inner" title="Active Study & Watch Time">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <i class="fa-regular fa-clock text-amber-300 text-xs sm:text-sm"></i>
+            <div class="text-left">
+              <div class="text-[9px] uppercase tracking-wider text-amber-200 leading-none">Screen Time</div>
+              <div id="headerTimer" class="text-xs sm:text-sm font-mono font-bold text-white leading-tight">00:00</div>
+            </div>
+          </div>
+
+          <div class="bg-amber-400 text-slate-950 rounded-xl px-3 py-1.5 flex items-center gap-1.5 font-extrabold text-xs sm:text-sm shadow">
+            <i class="fa-solid fa-star text-amber-700"></i>
+            <span id="scoreDisplay">0</span><span class="text-[11px] font-bold">/60 pts</span>
+          </div>
+
+          <button onclick="switchTab('tab-report')" class="bg-emerald-500 hover:bg-emerald-600 active:scale-95 transition text-white text-xs sm:text-sm font-extrabold px-3 py-2 rounded-xl shadow flex items-center gap-1.5">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span class="hidden md:inline">Submit Report</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="mt-2 bg-slate-950/50 rounded-full h-1.5 w-full overflow-hidden">
+        <div id="overallProgress" class="bg-gradient-to-r from-amber-300 via-emerald-400 to-cyan-400 h-full transition-all duration-500" style="width: 16%"></div>
+      </div>
+
+      <!-- Mobile-Friendly Horizontal Pill Navigation -->
+      <nav class="mt-2.5 flex space-x-1.5 overflow-x-auto no-scrollbar pb-1 text-xs sm:text-sm font-semibold">
+        <button onclick="switchTab('tab-lesson')" id="btn-tab-lesson" class="tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white text-rose-950 font-extrabold shadow-sm flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-book-medical"></i> 1. Face Sheet & Lesson (Pg 123–129)
+        </button>
+        <button onclick="switchTab('tab-comp')" id="btn-tab-comp" class="tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-amber-100 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-circle-question"></i> 2. Comprehension & Bio-Form (Pg 129–130)
+        </button>
+        <button onclick="switchTab('tab-vocab')" id="btn-tab-vocab" class="tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-amber-100 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-heart-pulse"></i> 3. Vocabulary & Heart Idioms (Pg 130–131)
+        </button>
+        <button onclick="switchTab('tab-grammar')" id="btn-tab-grammar" class="tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-amber-100 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-spell-check"></i> 4. Grammar & Editing (Pg 131–132)
+        </button>
+        <button onclick="switchTab('tab-writing')" id="btn-tab-writing" class="tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-amber-100 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-newspaper"></i> 5. Writing, Listening & Oral (Pg 133–135)
+        </button>
+        <button onclick="switchTab('tab-report')" id="btn-tab-report" class="tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-amber-400/20 border border-amber-300/40 hover:bg-amber-400/30 text-amber-200 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-paper-plane"></i> 6. Submit Watch Report
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="max-w-5xl mx-auto px-3 sm:px-6 pt-5 space-y-8">
+
+    <!-- HERO BANNER -->
+    <section class="bg-gradient-to-br from-rose-50 via-amber-50 to-orange-50 border border-rose-200 rounded-2xl p-4 sm:p-6 shadow-sm">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="space-y-2 max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-800 text-white text-xs font-bold">
+            <i class="fa-solid fa-hands-holding-heart text-amber-300"></i> Unit 8 • Gratitude (కృతజ్ఞతా భావం) • Pages 123–135
+          </div>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">
+            Dr. Dwarakanath Kotnis — An Evergreen Symbol of Humanity & Gratitude
+          </h2>
+          <p class="text-sm text-slate-700 leading-relaxed telugu-box">
+            రెండవ చైనా-జపాన్ యుద్ధ సమయంలో (1938–1942) తన ప్రాణాలను సైతం లెక్కచేయకుండా చైనా సైనికులకు నిస్వార్థంగా వైద్య సేవలు అందించి, 32 ఏళ్ల చిన్న వయసులోనే అమరుడైన భారతమాత ముద్దుబిడ్డ <strong>డాక్టర్ ద్వారకానాథ్ శాంతారామ్ కోట్నిస్</strong> గారి జీవిత చరిత్ర మరియు 123 నుండి 135 పేజీలలోని అన్ని అభ్యాసాలను విపులమైన తెలుగు వివరణలతో ఇక్కడ నేర్చుకుందాం!
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button onclick="speakText('Welcome to Class 8 English, Unit 8: Gratitude, Reading A: Doctor Dwarakanath Kotnis. Doctor Kotnis was a brave Indian physician from Sholapur who went to China in 1938 as part of the Indian Medical Mission and dedicated his life to saving wounded Chinese soldiers during the Second Sino-Japanese War.')" class="bg-rose-800 hover:bg-rose-900 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-volume-high"></i> Listen to Lesson Intro
+            </button>
+            <button onclick="stopSpeech()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold px-3 py-2 rounded-xl transition">
+              <i class="fa-solid fa-stop"></i> Stop Audio
+            </button>
+          </div>
+        </div>
+
+        <!-- Tribute Stamp Card -->
+        <div class="w-full md:w-80 bg-white/95 p-4 rounded-2xl border-2 border-amber-400 shadow-sm space-y-1.5">
+          <div class="text-xs font-extrabold uppercase tracking-wider text-rose-800 flex items-center justify-between">
+            <span><i class="fa-solid fa-medal text-amber-500"></i> India–China Bridge of Love</span>
+            <span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded text-[10px]">1910 – 1942</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold text-slate-800">
+            "performed operations for 72 hours non-stop without any sleep..."
+          </p>
+          <p class="text-xs text-rose-900 font-semibold pt-1 border-t border-slate-100 telugu-box">
+            నిద్ర లేకుండా ఏకధాటిగా 72 గంటల పాటు ఆపరేషన్లు చేసి, ప్లేగు వ్యాధి వ్యాక్సిన్‌ను తనపై తానే పరీక్షించుకున్న మహనీయుడు డా. కోట్నిస్!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- TAB 1: FACE SHEET (PG 123-124), FULL LESSON & GLOSSARY     -->
+    <!-- ========================================================== -->
+    <div id="tab-lesson" class="tab-panel space-y-6">
+
+      <!-- PAGE 124: FACE SHEET - MOTHER TERESA & GRATITUDE -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Pages 123–124 • Unit 8 Face Sheet (Gratitude)</span>
+            <h3 class="text-lg font-extrabold text-slate-900">Mother Teresa Receiving 1979 Nobel Peace Prize — Discussion & Oral Discourse</h3>
+          </div>
+          <button onclick="speakText(document.getElementById('facesheet-content').innerText)" class="bg-rose-800 text-white text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+            <i class="fa-solid fa-volume-high"></i> Read Aloud
+          </button>
+        </div>
+
+        <div id="facesheet-content" class="space-y-4">
+          <!-- Face Sheet Q1 -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">
+              1. Why do you think Mother Teresa was awarded Nobel Peace Prize?
+            </div>
+            <p class="text-xs sm:text-sm text-slate-800 leading-relaxed">
+              <strong>Answer:</strong> Mother Teresa was awarded the 1979 Nobel Peace Prize for her <strong>selfless humanitarian service and boundless compassion</strong> towards the poorest of the poor, orphans, lepers, the sick, and the dying destitute in the slums of Kolkata through her organisation, the <em>Missionaries of Charity</em>. She dedicated her entire life to bringing peace, dignity, and love to suffering humanity.
+            </p>
+            <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+              <strong>విపులమైన తెలుగు వివరణ:</strong> మదర్ థెరిసా గారు తన జీవితాంతం కోల్‌కతా మురికివాడల్లోని కటిక పేదలకు, అనాథలకు, కుష్ఠు వ్యాధిగ్రస్తులకు, నిరాశ్రయులకు మరియు మరణశయ్యపై ఉన్న అభాగ్యులకు <em>'మిషనరీస్ ఆఫ్ ఛారిటీ'</em> సంస్థ ద్వారా అవిశ్రాంతంగా నిస్వార్థ సేవ చేశారు. కుల, మత, దేశ భేదాలు లేకుండా మానవాళి పట్ల ఆమె చూపిన అపారమైన కరుణ, ప్రేమ మరియు ప్రపంచ శాంతి కోసం చేసిన కృషికి గుర్తింపుగా 1979లో ఆమెకు ప్రపంచంలోనే అత్యున్నతమైన <strong>'నోబెల్ శాంతి బహుమతి' (Nobel Peace Prize)</strong> లభించింది.
+            </div>
+          </div>
+
+          <!-- Face Sheet Q2 -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">
+              2. Do you know the name of any Indian who may have rendered any significant services in another country and is still remembered and honoured by the people there?
+            </div>
+            <p class="text-xs sm:text-sm text-slate-800 leading-relaxed">
+              <strong>Answer:</strong> Yes! <strong>Dr. Dwarakanath Shantaram Kotnis</strong> is a great Indian doctor who went to China in 1938 during the Second Sino-Japanese War and rendered selfless medical service to thousands of injured Chinese soldiers. Even today, he is deeply revered, honoured with memorials and stamps, and remembered in Chinese school textbooks. (Mahatma Gandhi is also honoured in South Africa for fighting racial discrimination.)
+            </p>
+            <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+              <strong>విపులమైన తెలుగు వివరణ:</strong> అవును! మహారాష్ట్రలోని షోలాపూర్‌కు చెందిన భారతీయ వైద్యుడు <strong>డాక్టర్ ద్వారకానాథ్ కోట్నిస్ (Dr. Dwarakanath Kotnis)</strong> 1938లో రెండవ చైనా-జపాన్ యుద్ధ సమయంలో చైనాకు వెళ్లి, అక్కడి గాయపడిన సైనికులకు నిస్వార్థంగా చికిత్స చేశారు. తన 32వ ఏట అక్కడే ప్రాణాలు విడిచిన ఆయన సేవలను చైనా ప్రజలు నేటికీ మరువలేదు. ఆయన గౌరవార్థం చైనాలో స్మారక మందిరం (Memorial Hall) నిర్మించారు, తపాలా బిళ్ళలు (Stamps) విడుదల చేశారు మరియు పాఠశాల పుస్తకాలలో ఆయన చరిత్రను పాఠంగా చేర్చారు.
+            </div>
+          </div>
+
+          <!-- Oral Discourse Page 124 -->
+          <div class="p-4 rounded-xl bg-rose-50/70 border border-rose-200 space-y-2">
+            <div class="font-extrabold text-sm sm:text-base text-rose-950">
+              <i class="fa-solid fa-microphone-lines mr-1"></i> Oral Discourse (Page 124): Talk on — “Mention different ways to express our gratitude towards the people who serve the society.”
+            </div>
+            <p class="text-xs sm:text-sm text-slate-800 leading-relaxed">
+              <strong>Model Speech:</strong> "Respected teacher and my dear friends, good morning! Today I want to speak on how we can express our <strong>gratitude</strong> towards the noble people who serve society—such as doctors, nurses, teachers, soldiers, farmers, and sanitation workers. First, we can express gratitude by treating them with heartfelt respect and saying a sincere 'Thank You' for their tireless sacrifices. Second, we should honour their memory through biographies, memorials, awards, and stamps, just as China and India honoured Dr. Kotnis. Third, the best way to thank social servants is by following their footsteps, helping the needy in our own neighbourhood, and being responsible citizens. Thank you!"
+            </p>
+            <div class="p-3 rounded-xl bg-white border border-rose-200 text-xs sm:text-sm text-rose-950 telugu-box">
+              <strong>విపులమైన తెలుగు వివరణ (మౌఖిక ప్రసంగం):</strong> సమాజానికి నిస్వార్థంగా సేవ చేసే వైద్యులు, ఉపాధ్యాయులు, సైనికులు, రైతులు, పారిశుద్ధ్య కార్మికులు మరియు సామాజిక కార్యకర్తల పట్ల మన కృతజ్ఞతను (Gratitude) అనేక విధాలుగా తెలియజేయవచ్చు: <br/>
+              1) వారిని మనస్ఫూర్తిగా గౌరవించడం మరియు వారి సేవలకు 'ధన్యవాదాలు' (Thank you) చెప్పడం. <br/>
+              2) వృద్ధాప్యంలో లేదా కష్టకాలంలో వారిని ఆదుకోవడం, వారి కుటుంబాలకు అండగా నిలవడం. <br/>
+              3) డాక్టర్ కోట్నిస్ గారిని చైనా ప్రజలు గౌరవించినట్లుగా, గొప్ప సేవకుల త్యాగాలను పాఠ్యపుస్తకాలు, స్మారక మందిరాలు, అవార్డుల ద్వారా ముందు తరాలకు తెలియజేయడం. <br/>
+              4) అన్నింటికంటే ముఖ్యంగా, వారి ఆశయాలను స్ఫూర్తిగా తీసుకొని మనం కూడా తోటివారికి సహాయం చేయడం ద్వారా వారికి నిజమైన కృతజ్ఞత చూపవచ్చు.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE TIMELINE OF DR. KOTNIS'S LIFE -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Interactive Journey Map</span>
+            <h3 class="text-lg font-extrabold text-slate-900">Tap Each Milestone in Dr. Dwarakanath Kotnis’s Life (1910–2012)</h3>
+          </div>
+          <span class="text-xs bg-amber-100 text-amber-900 px-3 py-1 rounded-full font-bold">Tap any year to explore in English & Telugu!</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-6 gap-2">
+          <button onclick="showTimeline(1)" id="tl-btn-1" class="p-2.5 rounded-xl border-2 border-rose-500 bg-rose-50 text-center space-y-1 transition">
+            <div class="text-xs font-extrabold text-rose-800">Oct 10, 1910</div>
+            <div class="text-[11px] font-semibold text-slate-800">Born in Sholapur</div>
+          </button>
+          <button onclick="showTimeline(2)" id="tl-btn-2" class="p-2.5 rounded-xl border-2 border-slate-200 bg-slate-50 text-center space-y-1 transition">
+            <div class="text-xs font-extrabold text-rose-800">Sept 1938</div>
+            <div class="text-[11px] font-semibold text-slate-800">Mission to China</div>
+          </button>
+          <button onclick="showTimeline(3)" id="tl-btn-3" class="p-2.5 rounded-xl border-2 border-slate-200 bg-slate-50 text-center space-y-1 transition">
+            <div class="text-xs font-extrabold text-rose-800">1940 Battle</div>
+            <div class="text-[11px] font-semibold text-slate-800">72-Hr Non-Stop Ops</div>
+          </button>
+          <button onclick="showTimeline(4)" id="tl-btn-4" class="p-2.5 rounded-xl border-2 border-slate-200 bg-slate-50 text-center space-y-1 transition">
+            <div class="text-xs font-extrabold text-rose-800">Nov 1941</div>
+            <div class="text-[11px] font-semibold text-slate-800">Marries Guo Qinglan</div>
+          </button>
+          <button onclick="showTimeline(5)" id="tl-btn-5" class="p-2.5 rounded-xl border-2 border-slate-200 bg-slate-50 text-center space-y-1 transition">
+            <div class="text-xs font-extrabold text-rose-800">Dec 9, 1942</div>
+            <div class="text-[11px] font-semibold text-slate-800">Martyrdom at 32</div>
+          </button>
+          <button onclick="showTimeline(6)" id="tl-btn-6" class="p-2.5 rounded-xl border-2 border-slate-200 bg-slate-50 text-center space-y-1 transition">
+            <div class="text-xs font-extrabold text-rose-800">1976 / 82 / 93</div>
+            <div class="text-[11px] font-semibold text-slate-800">Memorial & Stamps</div>
+          </button>
+        </div>
+
+        <div id="timelineDetailBox" class="p-4 rounded-xl bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-300 space-y-1.5">
+          <div class="font-extrabold text-rose-950 text-sm sm:text-base" id="tlTitle">📅 October 10, 1910 — Birth & Medical Dreams in Sholapur</div>
+          <p class="text-xs sm:text-sm text-slate-800" id="tlEn">Born in a lower-middle-class family in Sholapur, Maharashtra. A vivacious child, he graduated in medicine from G.S. Medical College, Bombay.</p>
+          <p class="text-xs sm:text-sm text-rose-950 font-semibold telugu-box" id="tlTe">తెలుగు వివరణ: డా. ద్వారకానాథ్ కోట్నిస్ 1910 అక్టోబర్ 10న మహారాష్ట్రలోని షోలాపూర్‌లో ఒక దిగువ మధ్యతరగతి కుటుంబంలో జన్మించారు. చిన్నప్పటి నుండి ఎంతో ఉత్సాహవంతుడైన ఆయన బొంబాయిలోని జి.ఎస్. మెడికల్ కాలేజీ నుండి వైద్య విద్యను పూర్తి చేశారు.</p>
+        </div>
+      </div>
+
+      <!-- FULL LESSON TEXT WITH LONG TELUGU EXPLANATIONS (PAGES 125–128) -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="bg-rose-900 text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-amber-300 font-bold">Textbook Pages 125–128 • A Reading</span>
+            <h3 class="text-lg font-extrabold">Complete Lesson with Audio & Long Telugu Explanations (సంపూర్ణ తెలుగు వివరణ)</h3>
+          </div>
+          <button onclick="speakText(document.getElementById('full-kotnis-lesson').innerText)" class="bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold px-3.5 py-2 rounded-xl shadow flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-headphones"></i> Read Aloud Lesson
+          </button>
+        </div>
+
+        <div id="full-kotnis-lesson" class="p-4 sm:p-6 space-y-6">
+
+          <!-- SECTION 1: Early Life & Call to China (Page 125) -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <span class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center text-xs">1</span>
+                Section 1: Early Life, Education & The 1938 Indian Medical Mission (Page 125)
+              </span>
+              <button onclick="speakText(document.getElementById('kotnis-sec-1').innerText)" class="text-rose-700 hover:text-rose-900 text-xs font-bold flex items-center gap-1">
+                <i class="fa-solid fa-volume-high"></i> Listen
+              </button>
+            </div>
+
+            <div id="kotnis-sec-1" class="text-sm sm:text-base leading-relaxed text-slate-800 space-y-2.5">
+              <p>
+                No other Indian can claim the kind of <span class="vocab-pill" onclick="showWordModal('adulation (n)', 'great admiration and praise (అపారమైన ప్రశంస / ఆరాధన)')">adulation</span> and respect Dr. Dwarakanath Kotnis enjoys in China. Coming from a family of doctors, Dr. Kotnis had always dreamt of becoming a physician. And the War of Resistance gave him the perfect opportunity to make himself useful in the battle field. He dedicated his entire life working as a battlefront doctor in China and rendered his selfless service to the injured Chinese soldiers during the Second Sino-Japanese War. Dr. Kotnis’ contribution towards humanity will be remembered for ever.
+              </p>
+              <p>
+                Dr. Dwarakanath Kotnis was born in a lower middle class family on October 10, 1910 in Sholapur, Maharashtra. A <span class="vocab-pill" onclick="showWordModal('vivacious (adj)', 'lively, cheerful, and full of energy (చలాకీగా, ఉత్సాహంగా ఉండే)')">vivacious</span> kid by nature, Dr. Kotnis forever aspired to become a doctor. After completing his graduation in medicine from G. S. Medical College, Bombay, he went on to pursue his post-graduation internship. However, he put aside his post-graduation plans when he got the chance to join the medical aid mission to China.
+              </p>
+              <p>
+                Dr. Kotnis always wanted to travel around the world and practise medicine in different parts of the globe. He started his medical expedition in Vietnam, and then, moved on to Singapore and Brunei. In 1937, the communist General Zhu De requested Jawaharlal Nehru to send Indian physicians to China during the Second Sino-Japanese War to help the soldiers. The President of the Indian National Congress, Netaji Subhash Chandra Bose accepted the request and made arrangements to send a team of volunteer doctors. A medical team of five doctors was sent as a part of Indian Medical Mission Team in September 1938. The medical team comprised of M. Atal, M. Cholkar, D. Kotnis, B.K. Basu and D. Mukerji. After the war, all other doctors except Dr. Kotnis, returned to India. However, Dr. Kotnis decided to stay back and serve at the military base. He initially started his work in Yan’an and then went to the anti-Japanese base area in North China where he worked in the surgical department of the Eighth Route Army General Hospital as the physician-in-charge.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-xs sm:text-sm text-slate-900 space-y-2 telugu-box">
+              <div class="font-extrabold text-amber-950 text-sm sm:text-base flex items-center gap-1.5">
+                <i class="fa-solid fa-language text-amber-700"></i> 1వ భాగం - విపులమైన తెలుగు వివరణ (Long Telugu Explanation):
+              </div>
+              <p>
+                <strong>చైనాలో డా. కోట్నిస్‌కు ఉన్న ఆరాధన:</strong> చైనా దేశంలో డాక్టర్ ద్వారకానాథ్ కోట్నిస్ గారికి లభించినంత ఆదరణ, ప్రశంస (adulation) మరియు గౌరవం మరే ఇతర భారతీయుడికీ లభించలేదని చెప్పవచ్చు. వైద్యుల కుటుంబం నుండి వచ్చిన కోట్నిస్ గారికి చిన్నప్పటి నుండి డాక్టర్ కావాలనేది పెద్ద కల. రెండవ చైనా-జపాన్ యుద్ధం (Second Sino-Japanese War) ఆయనకు యుద్ధభూమిలో గాయపడిన సైనికులకు సేవ చేసే గొప్ప అవకాశాన్ని ఇచ్చింది. ఆయన తన జీవితాన్ని చైనా యుద్ధభూమిలో వైద్యునిగా అంకితం చేసి, గాయపడిన చైనా సైనికులకు నిస్వార్థ సేవ (selfless service) అందించారు. మానవాళి పట్ల ఆయన చేసిన ఈ త్యాగం ఎప్పటికీ గుర్తుండిపోతుంది.
+              </p>
+              <p>
+                <strong>బాల్యం మరియు విద్యాభ్యాసం:</strong> డా. ద్వారకానాథ్ కోట్నిస్ 1910 అక్టోబర్ 10వ తేదీన మహారాష్ట్రలోని షోలాపూర్‌లో ఒక దిగువ మధ్యతరగతి కుటుంబంలో జన్మించారు. సహజంగానే ఎంతో ఉత్సాహంగా, చలాకీగా (vivacious) ఉండే కోట్నిస్, బొంబాయిలోని జి.ఎస్. మెడికల్ కాలేజీ నుండి వైద్య విద్యలో పట్టా (graduation) పొందారు. ఆ తర్వాత పోస్ట్-గ్రాడ్యుయేషన్ ఇంటర్న్‌షిప్ చేయాలనుకున్నారు. కానీ చైనాకు వెళ్లే వైద్య సహాయ బృందంలో (Medical Aid Mission) చేరే అవకాశం రాగానే, తన ఉన్నత చదువుల ప్రణాళికలను పక్కనపెట్టి సేవ చేయడానికే సిద్ధమయ్యారు.
+              </p>
+              <p>
+                <strong>1938 భారత వైద్య బృందం (Indian Medical Mission):</strong> ప్రపంచమంతా తిరుగుతూ వైద్య సేవలు అందించాలనే కోరికతో ఆయన మొదట వియత్నాం, సింగపూర్, బ్రూనై దేశాలలో పర్యటించారు. 1937లో చైనా కమ్యూనిస్ట్ జనరల్ <strong>ఝూ డే (Zhu De)</strong> రెండవ చైనా-జపాన్ యుద్ధంలో గాయపడిన తమ సైనికులకు సహాయం చేయడానికి భారతీయ వైద్యులను పంపమని జవహర్‌లాల్ నెహ్రూ గారిని కోరారు. అప్పటి భారత జాతీయ కాంగ్రెస్ అధ్యక్షుడైన <strong>నేతాజీ సుభాష్ చంద్రబోస్</strong> ఆ అభ్యర్థనను అంగీకరించి, 1938 సెప్టెంబర్‌లో ఐదుగురు స్వచ్ఛంద వైద్యుల బృందాన్ని చైనాకు పంపారు. ఆ ఐదుగురు డాక్టర్లు ఎవరంటే: <strong>1. ఎం. అటల్ (M. Atal), 2. ఎం. చోల్కర్ (M. Cholkar), 3. డి. కోట్నిస్ (D. Kotnis), 4. బి.కె. బసు (B.K. Basu), 5. డి. ముఖర్జీ (D. Mukerji)</strong>. యుద్ధం ముగిసిన తర్వాత మిగతా నలుగురు డాక్టర్లు భారతదేశానికి తిరిగి వచ్చేశారు. కానీ డాక్టర్ కోట్నిస్ మాత్రం చైనా సైనిక స్థావరంలోనే ఉండిపోయి సేవ చేయాలని నిర్ణయించుకున్నారు. ఆయన మొదట యానాన్ (Yan'an) లో పని ప్రారంభించి, ఆపై ఉత్తర చైనాలోని ఎయిత్ రూట్ ఆర్మీ జనరల్ హాస్పిటల్ (Eighth Route Army General Hospital) శస్త్రచికిత్స విభాగంలో ప్రధాన వైద్యాధికారిగా (Physician-in-charge) బాధ్యతలు చేపట్టారు.
+              </p>
+            </div>
+          </div>
+
+          <!-- SECTION 2: Marriage, Heroic 72-Hr Operations & Martyrdom (Page 126) -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <span class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center text-xs">2</span>
+                Section 2: Marriage to Guo Qinglan, 72-Hour Non-Stop Operations & Martyrdom (Page 126)
+              </span>
+              <button onclick="speakText(document.getElementById('kotnis-sec-2').innerText)" class="text-rose-700 hover:text-rose-900 text-xs font-bold flex items-center gap-1">
+                <i class="fa-solid fa-volume-high"></i> Listen
+              </button>
+            </div>
+
+            <div id="kotnis-sec-2" class="text-sm sm:text-base leading-relaxed text-slate-800 space-y-2.5">
+              <p>
+                It was while working with the soldiers that Dr. Kotnis <span class="vocab-pill" onclick="showWordModal('lost his heart (idiom)', 'fell deeply in love (ప్రేమలో పడుట)')">lost his heart</span> to a Chinese woman, Guo Qinglan. They were working in the same hospital. Dr. Kotnis was a doctor and Guo, a nurse. In November 1941, Kotnis married Guo and a son was born on August 23, 1942. They named the boy “Yin Hua” combining the Chinese characters “Yin” for India and “Hua” for China.
+              </p>
+              <p>
+                He worked as a lecturer for sometime in the Military area at the Dr. Bethune Hygiene School. He took over the post of the first president of the Bethune International Peace Hospital after Dr. Norman Bethune passed away.
+              </p>
+              <p>
+                During a long-drawn out battle against Japanese troops in 1940, Dr. Kotnis performed operations for 72 hours non-stop without any sleep and his small team conducted 50 operations everyday for a fortnight. In those harsh times, Mrs. Guo proved an ideal soulmate but was modest about her contribution. Dr. Kotnis played a major role in controlling a <span class="vocab-pill" onclick="showWordModal('virulent (adj)', 'extremely dangerous, deadly, and spreading rapidly (అత్యంత ప్రమాదకరమైన / తీవ్రమైన)')">virulent</span> strain of plague that hit Chinese soldiers. In the process, he did not fall back from trying out a vaccine on himself. The hardships of suppressed military life and the stresses that were especially relevant to the front-line doctors finally began to tell on Dr. Kotnis. He died of <span class="vocab-pill" onclick="showWordModal('epilepsy (n)', 'a disorder of the nervous system causing convulsions and loss of consciousness (మూర్ఛ వ్యాధి)')">epilepsy</span> on December 9, 1942 at the age of 32, and was buried in the Heroes Courtyard, Nanquan Village.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-xs sm:text-sm text-slate-900 space-y-2 telugu-box">
+              <div class="font-extrabold text-amber-950 text-sm sm:text-base flex items-center gap-1.5">
+                <i class="fa-solid fa-language text-amber-700"></i> 2వ భాగం - విపులమైన తెలుగు వివరణ (Long Telugu Explanation):
+              </div>
+              <p>
+                <strong>వివాహం మరియు 'యిన్ హువా' (Yin Hua) జననం:</strong> సైనికులకు సేవ చేస్తున్న సమయంలోనే డాక్టర్ కోట్నిస్ అదే ఆసుపత్రిలో నర్సుగా పనిచేస్తున్న <strong>గువో కింగ్లాన్ (Guo Qinglan)</strong> అనే చైనా యువతిని ప్రేమించారు (lost his heart = fell in love). 1941 నవంబర్‌లో వారు వివాహం చేసుకున్నారు. వారికి 1942 ఆగస్టు 23న ఒక కుమారుడు జన్మించాడు. భారతదేశం-చైనా మైత్రికి గుర్తుగా చైనా భాషలో <strong>"Yin" (భారతదేశం)</strong> మరియు <strong>"Hua" (చైనా)</strong> అనే రెండు అక్షరాలను కలిపి తమ బాబుకు <strong>"యిన్ హువా" (Yin Hua)</strong> అని పేరు పెట్టారు.
+              </p>
+              <p>
+                <strong>బెథూన్ ఇంటర్నేషనల్ పీస్ హాస్పిటల్ అధ్యక్షునిగా:</strong> కోట్నిస్ గారు కొంతకాలం మిలిటరీ ప్రాంతంలోని 'డా. బెథూన్ హైజీన్ స్కూల్'లో లెక్చరర్‌గా పనిచేశారు. కెనడాకు చెందిన ప్రముఖ వైద్యుడు డా. నార్మన్ బెథూన్ మరణించిన తర్వాత, <strong>'బెథూన్ ఇంటర్నేషనల్ పీస్ హాస్పిటల్' (Bethune International Peace Hospital)</strong> యొక్క మొట్టమొదటి అధ్యక్షునిగా (First President) డా. కోట్నిస్ బాధ్యతలు స్వీకరించారు.
+              </p>
+              <p>
+                <strong>72 గంటల నిరంతర శస్త్రచికిత్సలు & వీరమరణం:</strong> 1940లో జపాన్ సేనలతో జరిగిన సుదీర్ఘ యుద్ధంలో, డా. కోట్నిస్ కంటిమీద కునుకు లేకుండా <strong>ఏకధాటిగా 72 గంటల పాటు ఆపరేషన్లు</strong> చేశారు! ఆయన చిన్న వైద్య బృందం రెండు వారాల పాటు (for a fortnight) ప్రతిరోజూ 50 ఆపరేషన్లు నిర్వహించింది. అంతటి కష్టకాలంలో భార్య గువో ఆయనకు ఆదర్శవంతమైన సహచరిగా నిలిచింది. చైనా సైనికులకు సోకిన అత్యంత ప్రమాదకరమైన (virulent) <strong>ప్లేగు వ్యాధిని</strong> అరికట్టడంలో కోట్నిస్ కీలక పాత్ర పోషించారు. ఆ క్రమంలో ప్లేగు వ్యాక్సిన్‌ను స్వయంగా తన శరీరంపైనే పరీక్షించుకోవడానికి కూడా ఆయన వెనుకాడలేదు! అయితే, యుద్ధభూమిలోని తీవ్రమైన శ్రమ, మానసిక ఒత్తిడి ఆయన ఆరోగ్యాన్ని దెబ్బతీశాయి. చివరకు <strong>మూర్ఛ వ్యాధితో (epilepsy) 1942 డిసెంబర్ 9న కేవలం 32 ఏళ్ల పిన్న వయసులో</strong> ఆయన కన్నుమూశారు. ఆయన భౌతికకాయాన్ని నాన్క్వాన్ గ్రామంలోని <strong>'హీరోస్ కోర్ట్‌యార్డ్' (Heroes Courtyard - వీరుల ప్రాంగణం)</strong> లో సగౌరవంగా ఖననం చేశారు.
+              </p>
+            </div>
+          </div>
+
+          <!-- SECTION 3: Chinese Gratitude, Memorials & Stamps (Pages 126–127) -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <span class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center text-xs">3</span>
+                Section 3: Memorial Hall, Qingming Tribute & Commemorative Stamps (Pages 126–127)
+              </span>
+              <button onclick="speakText(document.getElementById('kotnis-sec-3').innerText)" class="text-rose-700 hover:text-rose-900 text-xs font-bold flex items-center gap-1">
+                <i class="fa-solid fa-volume-high"></i> Listen
+              </button>
+            </div>
+
+            <div id="kotnis-sec-3" class="text-sm sm:text-base leading-relaxed text-slate-800 space-y-2.5">
+              <p>
+                In order to cherish the memory of Dr. Kotnis, the Chinese government built a memorial hall for him in Shijiazhuang city, Hebei Province in 1976. No single Indian has been so much <span class="vocab-pill" onclick="showWordModal('revered (v)', 'respected and admired deeply (ఎంతో భక్తిశ్రద్ధలతో గౌరవించబడుట)')">revered</span> by ordinary Chinese as this doctor from a middle class family in Northern India. Along with the Canadian Dr. Norman Bethune, he continues to be revered by the Chinese people. In April 2005, both their graves were covered completely in flowers donated by the Chinese people during the Qingming Festival, a day used by the Chinese to <span class="vocab-pill" onclick="showWordModal('commemorate (v)', 'remember and show respect for a great person or event (స్మరించుకొనుట / నివాళులర్పించుట)')">commemorate</span> their ancestors. A small museum there has a hand book which contains words that Kotnis wrote in his “Passage from India to China”, some of the instruments that the surgeons used at their time and many photographs of doctors.
+              </p>
+              <p>
+                Both China and India honoured him with stamps in 1982 and 1993 respectively.
+              </p>
+              <p>
+                On a later occasion, Kotnis’ family stood before his grave in North China Martyrs’ Memorial Cemetery, Hebei Province. The family also toured Shijiazhuang and visited the Dr Bethune International Peace Hospital, where Kotnis once served as its director. In exclusive interviews with China Daily in Beijing and Shanghai, the family members shared their memories of the doctor, not only as a hero but also as a loved brother, husband and an adventurous young man.
+              </p>
+              <p>
+                “He was vivacious, and liked singing. Sometimes I couldn’t stop laughing when he told jokes,” said Guo, recalling Kotnis with a smile.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-xs sm:text-sm text-slate-900 space-y-2 telugu-box">
+              <div class="font-extrabold text-amber-950 text-sm sm:text-base flex items-center gap-1.5">
+                <i class="fa-solid fa-language text-amber-700"></i> 3వ భాగం - విపులమైన తెలుగు వివరణ (Long Telugu Explanation):
+              </div>
+              <p>
+                <strong>1976 స్మారక మందిరం మరియు కింగ్మింగ్ పండుగ నివాళులు:</strong> డాక్టర్ కోట్నిస్ జ్ఞాపకాలను పదిలపరుచుకోవడానికి చైనా ప్రభుత్వం <strong>1976లో హెబీ ప్రావిన్స్‌లోని షిజియాజువాంగ్ (Shijiazhuang) నగరంలో ఆయన కోసం ఒక గొప్ప స్మారక మందిరాన్ని (Memorial Hall)</strong> నిర్మించింది. కెనడాకు చెందిన డా. నార్మన్ బెథూన్‌తో పాటు డా. కోట్నిస్‌ను సామాన్య చైనా ప్రజలు నేటికీ దేవుడిలా ఆరాధిస్తారు (revered). చైనీయులు తమ పూర్వీకులను స్మరించుకునే (commemorate) <strong>'కింగ్మింగ్ పండుగ' (Qingming Festival)</strong> సందర్భంగా 2005 ఏప్రిల్‌లో చైనా ప్రజలు వేలాదిగా తరలివచ్చి వీరిద్దరి సమాధులను పూర్తిగా పూలతో ముంచెత్తారు. అక్కడి మ్యూజియంలో కోట్నిస్ స్వయంగా రాసిన <em>“Passage from India to China”</em> అనే పుస్తకం, నాటి శస్త్రచికిత్స పరికరాలు మరియు డాక్టర్ల ఫోటోలు భద్రపరచబడి ఉన్నాయి.
+              </p>
+              <p>
+                <strong>తపాలా బిళ్ళల (Stamps) గౌరవం:</strong> డా. కోట్నిస్ గౌరవార్థం <strong>చైనా ప్రభుత్వం 1982లో</strong> మరియు <strong>భారత ప్రభుత్వం 1993లో</strong> ప్రత్యేక స్మారక తపాలా బిళ్ళలను (Postage Stamps) విడుదల చేశాయి.
+              </p>
+              <p>
+                <strong>కుటుంబ సభ్యుల పర్యటన:</strong> తర్వాతి కాలంలో కోట్నిస్ కుటుంబ సభ్యులు హెబీ ప్రావిన్స్‌లోని అమరవీరుల శ్మశానవాటికలో ఉన్న ఆయన సమాధిని, బెథూన్ పీస్ హాస్పిటల్‌ను సందర్శించారు. 'చైనా డైలీ' పత్రికకు ఇచ్చిన ఇంటర్వ్యూలో వారు కోట్నిస్‌ను ఒక వీరుడిగానే కాకుండా, ప్రేమగల సోదరుడిగా, భర్తగా మరియు సాహసవంతుడైన యువకుడిగా గుర్తుచేసుకున్నారు. <em>"ఆయన ఎప్పుడూ ఉత్సాహంగా ఉండేవారు, పాటలు పాడటం అంటే ఇష్టం. ఆయన జోకులు చెప్తుంటే నేను నవ్వు ఆపుకోలేకపోయేదాన్ని"</em> అని భార్య గువో చిరునవ్వుతో గుర్తుచేసుకున్నారు.
+              </p>
+            </div>
+          </div>
+
+          <!-- SECTION 4: Mrs. Guo Qinglan's Unbroken Bond & Legacy in India (Pages 127–128) -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <span class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center text-xs">4</span>
+                Section 4: Mrs. Guo’s Unbroken India Bond & Legacy in Movies/Books (Pages 127–128)
+              </span>
+              <button onclick="speakText(document.getElementById('kotnis-sec-4').innerText)" class="text-rose-700 hover:text-rose-900 text-xs font-bold flex items-center gap-1">
+                <i class="fa-solid fa-volume-high"></i> Listen
+              </button>
+            </div>
+
+            <div id="kotnis-sec-4" class="text-sm sm:text-base leading-relaxed text-slate-800 space-y-2.5">
+              <p>
+                The tragic tale was to continue even after Dr. Kotnis’ death. Their son Yin Hua who was three months old when Dr. Kotnis died, also passed away when he was just 25. Mrs. Kotnis moved to Dalian in the 60s and lived there since. Despite the two premature deaths Mrs. Kotnis never let weeds cover her India connection. She visited the country at least half a dozen times and maintained her links with the Kotnis family.
+              </p>
+              <p>
+                Mrs. Kotnis had been an honoured guest at many high-level diplomatic functions between China and India such as the banquet Dalian Mayor Bo Xilai hosted for then Indian President K.R. Narayanan in June 2000 and during the visit of then Indian Prime Minister Vajpayee to Beijing in June 2003. She was a regular invitee at the Indian Embassy functions in China. In November 2006, she accompanied Chinese President Hu Jintao on a state visit to India. She died on 28 June 2012.
+              </p>
+              <p>
+                While Kotnis is <span class="vocab-pill" onclick="showWordModal('venerated (v)', 'regarded with great respect and reverence (పూజ్యభావంతో గౌరవించబడుట)')">venerated</span> in China, with textbooks recounting his story to children and a Beijing hospital even creating a medical team in his memory, very little is known of him in the land of his birth. ‘Few in Mumbai or the rest of the country know about the doctor who served in China during the 1938 Sino-Japanese war and died there in 1942,’ says his <span class="vocab-pill" onclick="showWordModal('septuagenarian (n)', 'a person who is between 70 and 79 years old / crossed 70 years (70 ఏళ్లు దాటిన వృద్ధులు)')">septuagenarian</span> younger sister Vatsala.
+              </p>
+              <p>
+                However, Dr. Kotnis became famous in his hometown after his death with the publication of his best-selling biography “One Who Never Returned” written by a film journalist, Khwaja Abbas Ahmed in 1945 and the screening of the 1946 classic Bollywood movie “Dr. Kotnis Ki Amar Kahani”, directed by V. Shantaram.
+              </p>
+              <p>
+                Echoing Vatsala is Leena Fernandes, the general secretary of the Mumbai chapter of the Indo-China Friendship Association: ‘Friendly ties between India and China have their own significance, even on a humanitarian level. The selfless service rendered by Dr. Dwarakanath Shantaram Kotnis, a proud son of India, during the Sino-Japanese war and to wounded Chinese soldiers is an evergreen symbol of the human relationship between the people of India and China.’
+              </p>
+              <p>
+                Added Kotnis’ elder sister Manorama, sitting in their 60-year apartment crowded with Chinese <span class="vocab-pill" onclick="showWordModal('memorabilia (n)', 'objects collected in memory of great persons and historical events (జ్ఞాపికలు / స్మారక వస్తువులు)')">memorabilia</span>: ‘Had it not been for the renowned filmmaker V. Shantaram and the Amar Chitra Katha comic book and maybe a few others, Indians would have never known how our brother, who served in Mao Zedong’s Red Army, saved lives during the war.’
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50 border-l-4 border-amber-500 text-xs sm:text-sm text-slate-900 space-y-2 telugu-box">
+              <div class="font-extrabold text-amber-950 text-sm sm:text-base flex items-center gap-1.5">
+                <i class="fa-solid fa-language text-amber-700"></i> 4వ భాగం - విపులమైన తెలుగు వివరణ (Long Telugu Explanation):
+              </div>
+              <p>
+                <strong>విషాదాన్ని తట్టుకొని భారత్‌తో బంధాన్ని నిలుపుకున్న శ్రీమతి గువో కింగ్లాన్:</strong> డా. కోట్నిస్ మరణించే నాటికి వారి కుమారుడు యిన్ హువా (Yin Hua) కేవలం మూడు నెలల పసికందు. దురదృష్టవశాత్తూ ఆ కుమారుడు కూడా కేవలం 25 ఏళ్ల వయసులోనే మరణించాడు. భర్త, కొడుకు ఇద్దరూ అకాల మరణం చెందినప్పటికీ శ్రీమతి కోట్నిస్ (గువో) భారతదేశంతో తనకున్న బంధాన్ని ఎన్నడూ తెగిపోనివ్వలేదు. ఆమె కనీసం ఆరు సార్లు (half a dozen times) భారతదేశాన్ని సందర్శించి కోట్నిస్ కుటుంబ సభ్యులతో అనుబంధాన్ని కొనసాగించారు.
+              </p>
+              <p>
+                <strong>భారత్-చైనా దౌత్య వేడుకలలో విశిష్ట అతిథిగా:</strong> చైనాలోని భారత రాయబార కార్యాలయం (Indian Embassy) నిర్వహించే ప్రతి వేడుకకు శ్రీమతి కోట్నిస్‌ను క్రమం తప్పకుండా ఆహ్వానించేవారు. జూన్ 2000లో అప్పటి భారత రాష్ట్రపతి కె.ఆర్. నారాయణన్ గారి గౌరవార్థం ఇచ్చిన విందులోనూ, జూన్ 2003లో అప్పటి ప్రధాని అటల్ బిహారీ వాజ్‌పేయి బీజింగ్ పర్యటనలోనూ ఆమె గౌరవ అతిథిగా పాల్గొన్నారు. నవంబర్ 2006లో చైనా అధ్యక్షుడు హు జింటావోతో కలిసి ఆమె భారతదేశంలో పర్యటించారు. ఆమె 2012 జూన్ 28న మరణించారు.
+              </p>
+              <p>
+                <strong>పుస్తకాలు మరియు సినిమాల ద్వారా భారతదేశంలో గుర్తింపు:</strong> చైనాలో పాఠ్యపుస్తకాల ద్వారా ప్రతి చిన్నారికి కోట్నిస్ కథ తెలిసినప్పటికీ, ఆయన పుట్టిన భారతదేశంలో మాత్రం చాలా తక్కువ మందికి ఆయన గురించి తెలుసని 70 ఏళ్లు పైబడిన (septuagenarian) ఆయన చెల్లెలు <strong>వత్సల (Vatsala)</strong> ఆవేదన వ్యక్తం చేశారు. అయితే, 1945లో ప్రముఖ సినీ జర్నలిస్ట్ <strong>ఖ్వాజా అబ్బాస్ అహ్మద్ (Khwaja Ahmad Abbas)</strong> రాసిన <strong>“One Who Never Returned” (తిరిగి రాని వీరుడు)</strong> అనే జీవిత చరిత్ర పుస్తకం మరియు 1946లో ప్రముఖ దర్శకుడు <strong>వి. శాంతారామ్</strong> రూపొందించిన <strong>“Dr. Kotnis Ki Amar Kahani” (డా. కోట్నిస్ కీ అమర్ కహానీ)</strong> అనే బాలీవుడ్ చిత్రం, అలాగే 'అమర్ చిత్ర కథ' కామిక్ పుస్తకం ద్వారా భారతీయులకు ఆయన త్యాగం తెలిసిందని ఆయన అక్క <strong>మనోరమ (Manorama)</strong> తెలిపారు. భారత్-చైనా ప్రజల మధ్య మానవతా సంబంధాలకు డా. కోట్నిస్ నిస్వార్థ సేవ ఒక శాశ్వత చిహ్నమని (evergreen symbol) ఇండో-చైనా ఫ్రెండ్‌షిప్ అసోసియేషన్ ప్రధాన కార్యదర్శి లీనా ఫెర్నాండెజ్ కొనియాడారు.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PAGE 129: COMPLETE GLOSSARY WITH TELUGU MEANINGS -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 129 • Glossary</span>
+          <h3 class="text-lg font-extrabold text-slate-900">All 10 Glossary Words with English & Telugu Meanings (కఠిన పదాల అర్థాలు)</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs sm:text-sm">
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">1. adulation (n)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> admiration; praise</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: అపారమైన ప్రశంస / ఆరాధన / కీర్తి</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">2. vivacious (adj)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> cheerful, lively, full of energy</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: ఉత్సాహవంతమైన / చలాకీగా ఉండే</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">3. virulent (adj)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> dangerous, severe, deadly</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: అత్యంత ప్రమాదకరమైన / తీవ్రమైన</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">4. shy away / fall back (phr.v)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> avoid something that you dislike or fear</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: భయంతో లేదా అయిష్టతతో వెనుకాడుట</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">5. epilepsy (n)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> a disease of the nervous system that causes a person to fall unconscious</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: మూర్ఛ వ్యాధి (నాడీ వ్యవస్థకు సంబంధించిన వ్యాధి)</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">6. revered (v)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> respected or admired deeply</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: భక్తిశ్రద్ధలతో లోతుగా గౌరవించబడుట</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">7. commemorate (v)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> keep a great person, event etc. in people’s memories</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: గొప్ప వ్యక్తులను లేదా సంఘటనలను స్మరించుకొనుట</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">8. venerated (v)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> respected deeply</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: పూజ్యభావంతో గౌరవించబడుట</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">9. septuagenarian (n)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> a person who crossed 70 years (70–79 years old)</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: 70 సంవత్సరాలు దాటిన వ్యక్తి (డెబ్బైలలో ఉన్నవారు)</div>
+          </div>
+          <div class="sm:col-span-2 lg:col-span-3 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 space-y-1">
+            <div class="font-extrabold text-rose-950">10. memorabilia (n)</div>
+            <div class="text-slate-700"><strong>Meaning:</strong> objects that are collected in memory of persons and events</div>
+            <div class="text-amber-900 font-semibold telugu-box">తెలుగు అర్థం: గొప్ప వ్యక్తులు మరియు చారిత్రక సంఘటనల జ్ఞాపకార్థం సేకరించిన వస్తువులు / జ్ఞాపికలు</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <button onclick="switchTab('tab-comp')" class="bg-rose-800 hover:bg-rose-900 text-white font-bold px-5 py-2.5 rounded-xl shadow flex items-center gap-2">
+          Next: Pages 129–130 Comprehension & Bio-Form <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- TAB 2: COMPREHENSION I & II + QUIZ (PAGES 129–130)         -->
+    <!-- ========================================================== -->
+    <div id="tab-comp" class="tab-panel hidden space-y-6">
+
+      <!-- Comprehension I: 6 Questions & Detailed Answers (Page 129) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 129 • Comprehension I</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Answer the following questions (English Model Answers + Long Telugu Explanations)</h3>
+        </div>
+
+        <!-- Q1 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="flex items-start justify-between gap-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">1. Why was Dr. Kotnis sent to China?</div>
+            <button onclick="speakText(document.getElementById('cq-1').innerText)" class="text-rose-700 text-xs font-bold shrink-0"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="cq-1" class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-1.5">
+            <p><strong>Model Answer:</strong> In 1937, during the Second Sino-Japanese War, the Chinese communist General Zhu De requested Jawaharlal Nehru to send Indian physicians to China to treat injured Chinese soldiers. Accepting this request, the President of the Indian National Congress, Netaji Subhash Chandra Bose, sent a five-member volunteer medical team in September 1938, and Dr. Kotnis was sent to China as a member of this Indian Medical Mission Team.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+            <strong>విపులమైన తెలుగు వివరణ:</strong> 1937లో జరిగిన రెండవ చైనా-జపాన్ యుద్ధంలో గాయపడిన చైనా సైనికులకు వైద్య సహాయం అందించడానికి భారతీయ డాక్టర్లను పంపమని చైనా కమ్యూనిస్ట్ జనరల్ ఝూ డే (Zhu De) జవహర్‌లాల్ నెహ్రూ గారిని కోరారు. అప్పటి భారత జాతీయ కాంగ్రెస్ అధ్యక్షుడు నేతాజీ సుభాష్ చంద్రబోస్ ఆ అభ్యర్థనను అంగీకరించి, 1938 సెప్టెంబర్‌లో ఐదుగురు డాక్టర్లతో కూడిన 'ఇండియన్ మెడికల్ మిషన్' బృందాన్ని చైనాకు పంపారు. ఆ బృందంలో సభ్యునిగా డా. కోట్నిస్ చైనాకు పంపబడ్డారు.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="flex items-start justify-between gap-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">2. What was Dr. Kotnis’ contribution to the Dr. Bethune International Peace Hospital in China?</div>
+            <button onclick="speakText(document.getElementById('cq-2').innerText)" class="text-rose-700 text-xs font-bold shrink-0"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="cq-2" class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-1.5">
+            <p><strong>Model Answer:</strong> After the passing of Dr. Norman Bethune, Dr. Kotnis served as the <strong>first president (director) of the Dr. Bethune International Peace Hospital</strong>. He also worked as a lecturer at the Dr. Bethune Hygiene School, performed tireless surgeries (including 72 hours non-stop during a 1940 battle and 50 operations a day for a fortnight), and controlled a deadly plague outbreak by testing the vaccine on himself.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+            <strong>విపులమైన తెలుగు వివరణ:</strong> డాక్టర్ నార్మన్ బెథూన్ మరణానంతరం, డా. కోట్నిస్ 'డా. బెథూన్ ఇంటర్నేషనల్ పీస్ హాస్పిటల్'కు <strong>మొట్టమొదటి అధ్యక్షునిగా (First President / Director)</strong> బాధ్యతలు నిర్వర్తించారు. అంతేకాకుండా డా. బెథూన్ హైజీన్ స్కూల్‌లో లెక్చరర్‌గా పనిచేశారు. యుద్ధ సమయంలో 72 గంటల పాటు నిద్ర లేకుండా ఆపరేషన్లు చేయడం, పక్షం రోజుల పాటు రోజుకు 50 శస్త్రచికిత్సలు చేయడం మరియు ప్రమాదకరమైన ప్లేగు వ్యాధిని అరికట్టడం ద్వారా ఆ ఆసుపత్రికి, సైనికులకు అమూల్యమైన సేవలు అందించారు.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="flex items-start justify-between gap-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">3. Why did Dr. Kotnis opt to stay back in China?</div>
+            <button onclick="speakText(document.getElementById('cq-3').innerText)" class="text-rose-700 text-xs font-bold shrink-0"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="cq-3" class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-1.5">
+            <p><strong>Model Answer:</strong> Although the other four Indian doctors returned to India after the war, Dr. Kotnis opted to stay back in China out of his <strong>deep sense of humanitarian duty and selfless dedication</strong> to serve the wounded soldiers at the military base. He wanted to make himself useful on the battlefront where doctors were badly needed.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+            <strong>విపులమైన తెలుగు వివరణ:</strong> యుద్ధం తర్వాత మిగతా నలుగురు భారతీయ డాక్టర్లు స్వదేశానికి తిరిగి వెళ్ళిపోయినప్పటికీ, గాయపడిన చైనా సైనికులకు ఇంకా వైద్య సహాయం ఎంతో అవసరమని భావించి, మానవతా దృక్పథంతో మరియు నిస్వార్థ సేవాభావంతో డా. కోట్నిస్ చైనా సైనిక స్థావరంలోనే ఉండిపోవాలని నిర్ణయించుకున్నారు.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="flex items-start justify-between gap-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">4. How did the Chinese show their gratitude towards Dr. Kotnis?</div>
+            <button onclick="speakText(document.getElementById('cq-4').innerText)" class="text-rose-700 text-xs font-bold shrink-0"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="cq-4" class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-1.5">
+            <p><strong>Model Answer:</strong> The Chinese showed their deep gratitude towards Dr. Kotnis in several ways:</p>
+            <ul class="list-disc list-inside space-y-1 pl-1">
+              <li>He was buried with full honours in the <strong>Heroes Courtyard</strong>, Nanquan Village.</li>
+              <li>In <strong>1976</strong>, the Chinese government built a grand <strong>Memorial Hall and museum</strong> for him in Shijiazhuang city, Hebei Province.</li>
+              <li>In <strong>1982</strong>, China honoured him by releasing a commemorative <strong>postage stamp</strong>.</li>
+              <li>During the <strong>Qingming Festival</strong> (April 2005), Chinese citizens covered his grave completely with flowers.</li>
+              <li>Chinese school <strong>textbooks</strong> recount his heroic story to children, and a Beijing hospital created a medical team in his memory.</li>
+            </ul>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+            <strong>విపులమైన తెలుగు వివరణ:</strong> చైనా ప్రజలు మరియు ప్రభుత్వం డా. కోట్నిస్ పట్ల తమ కృతజ్ఞతను అనేక విధాలుగా చాటుకున్నారు: <br/>
+            1) ఆయన మరణానంతరం నాన్క్వాన్ గ్రామంలోని 'హీరోస్ కోర్ట్‌యార్డ్' (వీరుల ప్రాంగణం)లో సగౌరవంగా ఖననం చేశారు. <br/>
+            2) 1976లో హెబీ ప్రావిన్స్‌లోని షిజియాజువాంగ్ నగరంలో ఆయన స్మారక మందిరాన్ని (Memorial Hall) మరియు మ్యూజియాన్ని నిర్మించారు. <br/>
+            3) 1982లో చైనా ప్రభుత్వం ఆయన గౌరవార్థం తపాలా బిళ్ళను (Stamp) విడుదల చేసింది. <br/>
+            4) కింగ్మింగ్ పండుగ రోజున చైనా ప్రజలు ఆయన సమాధిని పూలతో ముంచెత్తి నివాళులర్పిస్తారు. <br/>
+            5) చైనా పాఠశాలల పాఠ్యపుస్తకాలలో ఆయన కథను చేర్చారు మరియు బీజింగ్ ఆసుపత్రిలో ఆయన పేరు మీద ఒక వైద్య బృందాన్ని ఏర్పాటు చేశారు.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="flex items-start justify-between gap-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">5. Why was Mrs. Kotnis a regular invitee at the Indian Embassy functions in China?</div>
+            <button onclick="speakText(document.getElementById('cq-5').innerText)" class="text-rose-700 text-xs font-bold shrink-0"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="cq-5" class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-1.5">
+            <p><strong>Model Answer:</strong> Mrs. Kotnis (Guo Qinglan) was a regular invitee at the Indian Embassy functions and high-level diplomatic banquets because she was the wife of India’s heroic son Dr. Dwarakanath Kotnis, whose selfless sacrifice became an <strong>evergreen symbol of friendship and humanitarian bond between India and China</strong>. Moreover, she always cherished and maintained her close connection with India and the Kotnis family.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+            <strong>విపులమైన తెలుగు వివరణ:</strong> భారత్-చైనా దేశాల మధ్య స్నేహానికి, మానవతా బంధానికి చిహ్నంగా నిలిచిన డాక్టర్ ద్వారకానాథ్ కోట్నిస్ సతీమణి కావడంతో పాటు, భర్త మరణానంతరం కూడా ఆమె భారతదేశంతో మరియు కోట్నిస్ కుటుంబంతో తన అనుబంధాన్ని ఎంతో గౌరవంగా కొనసాగించారు. అందుకే డా. కోట్నిస్ త్యాగానికి గౌరవ సూచకంగా చైనాలోని భారత రాయబార కార్యాలయ (Indian Embassy) వేడుకలకు మరియు ఉన్నత స్థాయి దౌత్య విందులకు శ్రీమతి కోట్నిస్‌ను క్రమం తప్పకుండా ఆహ్వానించేవారు.
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="flex items-start justify-between gap-2">
+            <div class="font-extrabold text-sm sm:text-base text-slate-900">6. What kind of person, do you think, was Dr. Kotnis? What are your impressions about him?</div>
+            <button onclick="speakText(document.getElementById('cq-6').innerText)" class="text-rose-700 text-xs font-bold shrink-0"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="cq-6" class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-1.5">
+            <p><strong>Model Answer:</strong> Dr. Kotnis was a <strong>compassionate, selfless, courageous, and dedicated humanitarian</strong>. Even as a young man, he put aside his personal comfort and post-graduation plans to save wounded soldiers in a foreign land. He was hardworking (operating for 72 hours non-stop), fearless (testing a plague vaccine on himself), and also a cheerful, vivacious person who loved singing and telling jokes. He is truly a great role model for all of us.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+            <strong>విపులమైన తెలుగు వివరణ:</strong> డా. కోట్నిస్ ఎంతో దయాహృదయం, నిస్వార్థ సేవాభావం, ధైర్యం మరియు అంకితభావం కలిగిన గొప్ప మానవతావాది. తన స్వంత సౌకర్యాలను, ఉన్నత చదువులను సైతం వదులుకొని పరాయి దేశంలో గాయపడిన సైనికుల ప్రాణాలు కాపాడటానికి వెళ్లారు. 72 గంటల పాటు విశ్రాంతి లేకుండా ఆపరేషన్లు చేసేంత కష్టజీవి, ప్లేగు వ్యాక్సిన్‌ను తనపై తానే పరీక్షించుకునేంత సాహసి. అదే సమయంలో ఎప్పుడూ నవ్వుతూ, పాటలు పాడుతూ, జోకులు వేస్తూ అందరినీ ఉత్సాహపరిచే స్నేహశీలి. ఆయన జీవితం మనందరికీ గొప్ప ఆదర్శం.
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPREHENSION II: BIO-DATA FORM OF DR. KOTNIS (PAGES 129–130) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Pages 129–130 • Comprehension II</span>
+          <h3 class="text-lg font-extrabold text-slate-900">II. Read the passage about Dr. Kotnis again and fill in the form given below:</h3>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-rose-900 text-white">
+                <th class="p-3 rounded-tl-xl w-1/3">Field (వివరాలు)</th>
+                <th class="p-3 rounded-tr-xl">Filled Information (English & Telugu)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 bg-slate-50">
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">1. Name :</td>
+                <td class="p-3 font-semibold text-emerald-950">Dr. Dwarakanath Shantaram Kotnis (డా. ద్వారకానాథ్ శాంతారామ్ కోట్నిస్)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">2. Year of birth :</td>
+                <td class="p-3 font-semibold text-emerald-950">1910 (October 10, 1910)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">3. Place of birth :</td>
+                <td class="p-3 font-semibold text-emerald-950">Sholapur, Maharashtra (షోలాపూర్, మహారాష్ట్ర)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">4. Occupation :</td>
+                <td class="p-3 font-semibold text-emerald-950">Physician / Doctor (వైద్యుడు)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">5. Nationality :</td>
+                <td class="p-3 font-semibold text-emerald-950">Indian (భారతీయుడు)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">6. Wife’s name :</td>
+                <td class="p-3 font-semibold text-emerald-950">Guo Qinglan (గువో కింగ్లాన్ - చైనా నర్సు)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">7. Places of work and the positions held :</td>
+                <td class="p-3 font-semibold text-emerald-950 space-y-1">
+                  <div>• <strong>Vietnam, Singapore & Brunei:</strong> Practised medicine during his medical expedition.</div>
+                  <div>• <strong>Yan’an & North China (Eighth Route Army General Hospital):</strong> Physician-in-charge in the surgical department.</div>
+                  <div>• <strong>Dr. Bethune Hygiene School:</strong> Worked as a Lecturer.</div>
+                  <div>• <strong>Dr. Bethune International Peace Hospital:</strong> First President / Director.</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">8. Honours given by China and India :</td>
+                <td class="p-3 font-semibold text-emerald-950 space-y-1">
+                  <div>• Buried in the <strong>Heroes Courtyard</strong>, Nanquan Village (1942).</div>
+                  <div>• <strong>Memorial Hall & Museum</strong> built by Chinese Govt. in Shijiazhuang city, Hebei Province (1976).</div>
+                  <div>• Honoured with <strong>Commemorative Postage Stamps</strong> by China (in <strong>1982</strong>) and by India (in <strong>1993</strong>).</div>
+                  <div>• Story included in Chinese school textbooks; biography & classic movie made in India.</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-slate-900">9. Date of death :</td>
+                <td class="p-3 font-semibold text-emerald-950">December 9, 1942 (at the age of 32, due to epilepsy)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE 6-QUESTION QUIZ ON DR. KOTNIS (30 PTS) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-600">Interactive Quiz • Part 1 (30 Points)</span>
+            <h3 class="text-lg font-extrabold text-slate-900">Test Your Knowledge on Dr. Dwarakanath Kotnis</h3>
+          </div>
+          <span class="text-xs bg-rose-100 text-rose-900 px-3 py-1 rounded-full font-bold">+5 pts per correct answer</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-bold text-sm text-slate-900">1. Where and when was Dr. Dwarakanath Kotnis born?</div>
+            <div class="space-y-1.5 text-xs sm:text-sm">
+              <button onclick="checkQuiz(1, 'a', 'a')" id="qz-1-a" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">a) October 10, 1910 in Sholapur, Maharashtra</button>
+              <button onclick="checkQuiz(1, 'b', 'a')" id="qz-1-b" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">b) August 15, 1920 in Pune</button>
+              <button onclick="checkQuiz(1, 'c', 'a')" id="qz-1-c" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">c) December 9, 1912 in Beijing</button>
+            </div>
+            <div id="qz-exp-1" class="hidden text-xs p-2 rounded-lg"></div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-bold text-sm text-slate-900">2. Who accepted General Zhu De's request and arranged to send the Indian Medical Mission in Sept 1938?</div>
+            <div class="space-y-1.5 text-xs sm:text-sm">
+              <button onclick="checkQuiz(2, 'a', 'b')" id="qz-2-a" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">a) V. Shantaram</button>
+              <button onclick="checkQuiz(2, 'b', 'b')" id="qz-2-b" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">b) Netaji Subhash Chandra Bose (Congress President)</button>
+              <button onclick="checkQuiz(2, 'c', 'b')" id="qz-2-c" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">c) Dr. Norman Bethune</button>
+            </div>
+            <div id="qz-exp-2" class="hidden text-xs p-2 rounded-lg"></div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-bold text-sm text-slate-900">3. What did Dr. Kotnis and his wife Guo Qinglan name their son, combining the words for India and China?</div>
+            <div class="space-y-1.5 text-xs sm:text-sm">
+              <button onclick="checkQuiz(3, 'a', 'c')" id="qz-3-a" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">a) Bo Xilai</button>
+              <button onclick="checkQuiz(3, 'b', 'c')" id="qz-3-b" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">b) Zhu De</button>
+              <button onclick="checkQuiz(3, 'c', 'c')" id="qz-3-c" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">c) Yin Hua (“Yin” for India + “Hua” for China)</button>
+            </div>
+            <div id="qz-exp-3" class="hidden text-xs p-2 rounded-lg"></div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-bold text-sm text-slate-900">4. For how many hours did Dr. Kotnis perform operations non-stop without sleep during the 1940 battle?</div>
+            <div class="space-y-1.5 text-xs sm:text-sm">
+              <button onclick="checkQuiz(4, 'a', 'b')" id="qz-4-a" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">a) 24 hours</button>
+              <button onclick="checkQuiz(4, 'b', 'b')" id="qz-4-b" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">b) 72 hours non-stop</button>
+              <button onclick="checkQuiz(4, 'c', 'b')" id="qz-4-c" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">c) 12 hours</button>
+            </div>
+            <div id="qz-exp-4" class="hidden text-xs p-2 rounded-lg"></div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-bold text-sm text-slate-900">5. In which years did China and India honour Dr. Kotnis with commemorative stamps?</div>
+            <div class="space-y-1.5 text-xs sm:text-sm">
+              <button onclick="checkQuiz(5, 'a', 'a')" id="qz-5-a" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">a) China in 1982 and India in 1993</button>
+              <button onclick="checkQuiz(5, 'b', 'a')" id="qz-5-b" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">b) 1945 and 1946</button>
+              <button onclick="checkQuiz(5, 'c', 'a')" id="qz-5-c" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">c) 2000 and 2005</button>
+            </div>
+            <div id="qz-exp-5" class="hidden text-xs p-2 rounded-lg"></div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="font-bold text-sm text-slate-900">6. Who wrote the 1945 biography “One Who Never Returned” and who directed the 1946 movie “Dr. Kotnis Ki Amar Kahani”?</div>
+            <div class="space-y-1.5 text-xs sm:text-sm">
+              <button onclick="checkQuiz(6, 'a', 'c')" id="qz-6-a" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">a) B.K. Basu & M. Atal</button>
+              <button onclick="checkQuiz(6, 'b', 'c')" id="qz-6-b" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">b) Rabindranath Tagore & Satyajit Ray</button>
+              <button onclick="checkQuiz(6, 'c', 'c')" id="qz-6-c" class="w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-rose-50">c) Khwaja Abbas Ahmed (Biography) & V. Shantaram (Movie)</button>
+            </div>
+            <div id="qz-exp-6" class="hidden text-xs p-2 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <button onclick="switchTab('tab-lesson')" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <button onclick="switchTab('tab-vocab')" class="bg-rose-800 hover:bg-rose-900 text-white font-bold px-5 py-2.5 rounded-xl shadow flex items-center gap-2">
+          Next: Pages 130–131 Vocabulary & Heart Idioms <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- TAB 3: VOCABULARY - SEMANTIC MAPPING & HEART IDIOMS        -->
+    <!-- ========================================================== -->
+    <div id="tab-vocab" class="tab-panel hidden space-y-6">
+
+      <!-- Semantic Mapping Explanation & Exercise I (Page 130) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 130 • Vocabulary I</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Semantic Mapping (పదాల అర్థ సంబంధ పటం)</h3>
+        </div>
+
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm space-y-2 telugu-box">
+          <div class="font-extrabold text-amber-950">💡 Semantic Mapping అంటే ఏమిటి? (తెలుగు వివరణ):</div>
+          <p>
+            ఒకే అంశానికి లేదా రంగానికి సంబంధించిన పదాలను (ఉదాహరణకు: <strong>'Doctor'</strong> లేదా <strong>'Bus'</strong>) వాటి అర్థాల ఆధారంగా వివిధ విభాగాలుగా వర్గీకరించడాన్ని <strong>Semantic Mapping</strong> అంటారు. ఇలా అర్థంలో ఒకదానికొకటి సంబంధం ఉన్న పదాల సమూహాన్ని <strong>Semantic Field</strong> అంటారు. ఉదాహరణకు <em>'doctor'</em> అనే పదానికి సంబంధించిన పదాలను పాఠ్యపుస్తకంలో ఎలా వర్గీకరించారో చూడండి:
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 pt-1 font-sans">
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Profession:</strong> physician (వైద్యుడు)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Specialization:</strong> neurologist (నరాల నిపుణుడు)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Qualification:</strong> MBBS, MD (డిగ్రీలు)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Dress Code:</strong> white coat (తెల్ల కోటు)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Medicines:</strong> crocin (మందులు)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Place of work:</strong> clinic, hospital</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Service:</strong> treatment (చికిత్స)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Tools:</strong> syringe (సూది మందు)</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Vehicle:</strong> ambulance</div>
+            <div class="bg-white p-2 rounded-lg border border-amber-300"><strong>Target Group:</strong> patient (రోగి)</div>
+          </div>
+        </div>
+
+        <!-- Solved Exercise: Write 4 words associated with Space, Business, Occupation, Travel -->
+        <div class="space-y-3">
+          <h4 class="font-extrabold text-sm sm:text-base text-slate-900">
+            Exercise I (Page 130): Write four words that belong to and that you can associate with the following words:
+          </h4>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- 1. Space -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <i class="fa-solid fa-shuttle-space text-rose-700"></i> 1. space (అంతరిక్షం)
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs sm:text-sm font-bold text-emerald-950">
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(a) satellite (ఉపగ్రహం)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(b) astronaut (వ్యోమగామి)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(c) rocket / spacecraft (రాకెట్)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(d) planets / orbit (గ్రహాలు / కక్ష్య)</div>
+              </div>
+              <p class="text-xs text-slate-600 telugu-box">అదనపు పదాలు: galaxy (గెలాక్సీ), meteor (ఉల్క), space station (అంతరిక్ష కేంద్రం), telescope (టెలిస్కోప్).</p>
+            </div>
+
+            <!-- 2. Business -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <i class="fa-solid fa-briefcase text-rose-700"></i> 2. business (వ్యాపారం)
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs sm:text-sm font-bold text-emerald-950">
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(a) capital / investment (పెట్టుబడి)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(b) profit / loss (లాభం / నష్టం)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(c) customer / client (వినియోగదారుడు)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(d) market / merchant (మార్కెట్ / వ్యాపారి)</div>
+              </div>
+              <p class="text-xs text-slate-600 telugu-box">అదనపు పదాలు: trade (వాణిజ్యం), goods (వస్తువులు), company (కంపెనీ), partner (భాగస్వామి).</p>
+            </div>
+
+            <!-- 3. Occupation -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <i class="fa-solid fa-user-tie text-rose-700"></i> 3. occupation (వృత్తి / ఉద్యోగం)
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs sm:text-sm font-bold text-emerald-950">
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(a) teacher (ఉపాధ్యాయుడు)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(b) doctor / physician (వైద్యుడు)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(c) engineer (ఇంజనీర్)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(d) lawyer / farmer (న్యాయవాది / రైతు)</div>
+              </div>
+              <p class="text-xs text-slate-600 telugu-box">అదనపు పదాలు: salary (జీతం), duty (విధి), profession (వృత్తి), carpenter (వడ్రంగి).</p>
+            </div>
+
+            <!-- 4. Travel -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-extrabold text-rose-900 text-sm sm:text-base flex items-center gap-2">
+                <i class="fa-solid fa-plane-departure text-rose-700"></i> 4. travel (ప్రయాణం)
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs sm:text-sm font-bold text-emerald-950">
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(a) ticket (టిక్కెట్టు)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(b) luggage / baggage (సామాను)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(c) passport / visa (పాస్‌పోర్ట్)</div>
+                <div class="bg-emerald-100 px-3 py-2 rounded-lg">(d) passenger / tourist (ప్రయాణికుడు)</div>
+              </div>
+              <p class="text-xs text-slate-600 telugu-box">అదనపు పదాలు: journey (యాత్ర), train / flight (రైలు / విమానం), destination (గమ్యస్థానం).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vocabulary II & III: Expressions with 'Heart' & Matching (Page 131) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 131 • Vocabulary II & III</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Idiomatic Expressions with the Word ‘Heart’ & Matching Exercise</h3>
+        </div>
+
+        <div class="p-4 rounded-xl bg-rose-50 border border-rose-200 text-xs sm:text-sm space-y-2 telugu-box">
+          <div><strong>1. “Dr. Kotnis lost his heart to a Chinese woman.”</strong> — ఇక్కడ <strong>‘lost his heart’</strong> అంటే <strong>‘fell in love’ (ప్రేమలో పడ్డాడు)</strong> అని అర్థం. (గమనిక: సాధారణంగా <em>'lose heart'</em> అంటే నిరాశ చెందుట / ధైర్యం కోల్పోవుట అని కూడా అర్థం వస్తుంది, కానీ <em>'lost his heart to someone'</em> అన్నప్పుడు మనసు పారేసుకొనుట / ప్రేమలో పడుట అని అర్థం.)</div>
+          <div><strong>2. “Eat your heart out!”</strong> — అంటే <strong>‘suffer from envy or jealousy’ (ఈర్ష్యతో లేదా అసూయతో కుమిలిపోవుట)</strong>. ఉదాహరణకు: <em>"When he hears about your promotion he will eat his heart out."</em></div>
+        </div>
+
+        <!-- Exercise III: Match the Following (Interactive + Complete Key) -->
+        <div class="space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h4 class="font-extrabold text-sm sm:text-base text-slate-900">III. Match the following Heart Idioms (Page 131) — Select the correct meaning (+15 pts):</h4>
+          </div>
+
+          <div class="space-y-2.5 text-xs sm:text-sm">
+            <!-- Item 1 -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-extrabold text-slate-900">1. have a heart</span>
+                <div class="text-xs text-slate-600 telugu-box">తెలుగు వివరణ: దయ కలిగి ఉండుట / జాలి చూపుట (ఉదా: Have a heart and forgive the poor boy!)</div>
+              </div>
+              <select onchange="checkHeartMatch(1, this.value, 'd')" class="rounded-xl border border-slate-300 px-3 py-2 font-bold bg-white text-slate-800">
+                <option value="">-- Choose Meaning --</option>
+                <option value="a">a) sadness</option>
+                <option value="b">b) no feelings</option>
+                <option value="c">c) a very deep thank you</option>
+                <option value="d" selected>d) be merciful ✓ (దయ కలిగి ఉండుట)</option>
+                <option value="e">e) lost love</option>
+                <option value="f">f) take seriously</option>
+              </select>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-extrabold text-slate-900">2. broken heart</span>
+                <div class="text-xs text-slate-600 telugu-box">తెలుగు వివరణ: ప్రేమలో విఫలమవుట లేదా తీవ్రమైన మనోవేదన / పగిలిన హృదయం</div>
+              </div>
+              <select onchange="checkHeartMatch(2, this.value, 'e')" class="rounded-xl border border-slate-300 px-3 py-2 font-bold bg-white text-slate-800">
+                <option value="">-- Choose Meaning --</option>
+                <option value="a">a) sadness</option>
+                <option value="b">b) no feelings</option>
+                <option value="c">c) a very deep thank you</option>
+                <option value="d">d) be merciful</option>
+                <option value="e" selected>e) lost love ✓ (ప్రేమను కోల్పోవుట / తీవ్ర దుఃఖం)</option>
+                <option value="f">f) take seriously</option>
+              </select>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-extrabold text-slate-900">3. heavy heart</span>
+                <div class="text-xs text-slate-600 telugu-box">తెలుగు వివరణ: బరువెక్కిన హృదయంతో / ఎంతో విచారంతో (With a heavy heart, she said goodbye.)</div>
+              </div>
+              <select onchange="checkHeartMatch(3, this.value, 'a')" class="rounded-xl border border-slate-300 px-3 py-2 font-bold bg-white text-slate-800">
+                <option value="">-- Choose Meaning --</option>
+                <option value="a" selected>a) sadness ✓ (విచారం / దుఃఖం)</option>
+                <option value="b">b) no feelings</option>
+                <option value="c">c) a very deep thank you</option>
+                <option value="d">d) be merciful</option>
+                <option value="e">e) lost love</option>
+                <option value="f">f) take seriously</option>
+              </select>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-extrabold text-slate-900">4. take to heart</span>
+                <div class="text-xs text-slate-600 telugu-box">తెలుగు వివరణ: మనసుకు తీసుకొనుట / చాలా తీవ్రంగా పరిగణించుట (Don't take his joke to heart.)</div>
+              </div>
+              <select onchange="checkHeartMatch(4, this.value, 'f')" class="rounded-xl border border-slate-300 px-3 py-2 font-bold bg-white text-slate-800">
+                <option value="">-- Choose Meaning --</option>
+                <option value="a">a) sadness</option>
+                <option value="b">b) no feelings</option>
+                <option value="c">c) a very deep thank you</option>
+                <option value="d">d) be merciful</option>
+                <option value="e">e) lost love</option>
+                <option value="f" selected>f) take seriously ✓ (తీవ్రంగా మనసుకు తీసుకొనుట)</option>
+              </select>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-extrabold text-slate-900">5. a heart of stone</span>
+                <div class="text-xs text-slate-600 telugu-box">తెలుగు వివరణ: రాతి గుండె / ఎలాంటి జాలి, దయ, భావోద్వేగాలు లేకపోవుట</div>
+              </div>
+              <select onchange="checkHeartMatch(5, this.value, 'b')" class="rounded-xl border border-slate-300 px-3 py-2 font-bold bg-white text-slate-800">
+                <option value="">-- Choose Meaning --</option>
+                <option value="a">a) sadness</option>
+                <option value="b" selected>b) no feelings ✓ (ఎలాంటి జాలి/భావాలు లేకపోవుట)</option>
+                <option value="c">c) a very deep thank you</option>
+                <option value="d">d) be merciful</option>
+                <option value="e">e) lost love</option>
+                <option value="f">f) take seriously</option>
+              </select>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-extrabold text-slate-900">6. thanks from the bottom of my heart</span>
+                <div class="text-xs text-slate-600 telugu-box">తెలుగు వివరణ: నా హృదయపూర్వకమైన లోతైన కృతజ్ఞతలు</div>
+              </div>
+              <select onchange="checkHeartMatch(6, this.value, 'c')" class="rounded-xl border border-slate-300 px-3 py-2 font-bold bg-white text-slate-800">
+                <option value="">-- Choose Meaning --</option>
+                <option value="a">a) sadness</option>
+                <option value="b">b) no feelings</option>
+                <option value="c" selected>c) a very deep thank you ✓ (హృదయపూర్వక కృతజ్ఞతలు)</option>
+                <option value="d">d) be merciful</option>
+                <option value="e">e) lost love</option>
+                <option value="f">f) take seriously</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <button onclick="switchTab('tab-comp')" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <button onclick="switchTab('tab-grammar')" class="bg-rose-800 hover:bg-rose-900 text-white font-bold px-5 py-2.5 rounded-xl shadow flex items-center gap-2">
+          Next: Pages 131–132 Grammar & Editing <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- TAB 4: GRAMMAR & EDITING (PAGES 131–132)                   -->
+    <!-- ========================================================== -->
+    <div id="tab-grammar" class="tab-panel hidden space-y-6">
+
+      <!-- Grammar Concept Guide in English & Long Telugu (Pages 131–132) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Pages 131–132 • Grammar</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Coordinating vs. Subordinating Conjunctions • Compound & Complex Sentences</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <!-- Compound Sentence Box -->
+          <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 space-y-2 telugu-box">
+            <div class="font-extrabold text-emerald-950 text-base font-sans">
+              1. Compound Sentence (సంయుక్త వాక్యం)
+            </div>
+            <p class="font-sans text-slate-800">
+              A sentence consisting of <strong>two or more Main (Independent) Clauses</strong> joined by a <strong>Coordinating Conjunction</strong> (<em>and, but, or, nor, for, yet, so, either...or, neither...nor, not only...but also</em>).
+            </p>
+            <p class="text-emerald-950">
+              <strong>విపులమైన తెలుగు వివరణ:</strong> స్వతంత్రంగా పూర్తి అర్థాన్ని ఇవ్వగల రెండు లేదా అంతకంటే ఎక్కువ <strong>ప్రధాన వాక్య భాగాలను (Main Clauses)</strong> <em>and (మరియు), but (కానీ), or (లేదా), so (కాబట్టి), yet (అయినప్పటికీ)</em> వంటి <strong>Coordinating Conjunctions</strong> తో కలిపితే ఏర్పడే వాక్యాన్ని <strong>Compound Sentence (సంయుక్త వాక్యం)</strong> అంటారు. ఇందులో రెండు భాగాలూ సమాన ప్రాధాన్యత కలిగి ఉంటాయి.
+            </p>
+            <div class="p-2.5 bg-white rounded-lg border border-emerald-300 font-sans text-xs">
+              <strong>Ex 1:</strong> <span class="main-clause-pill">Dr. Kotnis was a doctor</span> <span class="conj-pill">and</span> <span class="main-clause-pill">Guo (was) a nurse.</span><br/>
+              <span class="text-emerald-800 font-bold">→ Two Main Clauses = Compound Sentence</span>
+            </div>
+          </div>
+
+          <!-- Complex Sentence Box -->
+          <div class="p-4 rounded-xl bg-sky-50 border border-sky-200 space-y-2 telugu-box">
+            <div class="font-extrabold text-sky-950 text-base font-sans">
+              2. Complex Sentence (సంక్లిష్ట వాక్యం)
+            </div>
+            <p class="font-sans text-slate-800">
+              A sentence consisting of <strong>one Main Clause</strong> and <strong>one or more Subordinate (Dependent) Clauses</strong> joined by a <strong>Subordinating Conjunction</strong> (<em>when, because, if, though, since, while, as, after, before, until</em>).
+            </p>
+            <p class="text-sky-950">
+              <strong>విపులమైన తెలుగు వివరణ:</strong> పూర్తి అర్థాన్ని ఇచ్చే ఒక <strong>ప్రధాన వాక్య భాగం (Main Clause)</strong> మరియు తనంతట తాను పూర్తి అర్థాన్ని ఇవ్వలేక ప్రధాన వాక్యంపై ఆధారపడే <strong>ఆధారిత వాక్య భాగం (Subordinate Clause)</strong> కలిసి ఉన్న వాక్యాన్ని <strong>Complex Sentence (సంక్లిష్ట వాక్యం)</strong> అంటారు. Subordinate Clause ఎల్లప్పుడూ <em>when, if, because, though, since, while</em> వంటి <strong>Subordinating Conjunctions</strong> తో మొదలవుతుంది.
+            </p>
+            <div class="p-2.5 bg-white rounded-lg border border-sky-300 font-sans text-xs">
+              <strong>Ex 2:</strong> <span class="main-clause-pill">I could not stop laughing</span> <span class="sub-clause-pill"><span class="conj-pill">when</span> he told jokes.</span><br/>
+              <span class="text-sky-800 font-bold">→ 1 Main Clause + 1 Subordinate Clause = Complex Sentence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solved Exercise: Identify Main Clauses and Subordinate Clauses (Page 132) -->
+        <div class="space-y-3 pt-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h4 class="font-extrabold text-sm sm:text-base text-slate-900">
+              Page 132 Exercise: Identify the clauses and say whether they are Main Clauses or Subordinate Clauses:
+            </h4>
+            <div class="flex flex-wrap gap-2 text-xs font-bold">
+              <span class="main-clause-pill">Green = Main Clause</span>
+              <span class="sub-clause-pill">Blue = Subordinate Clause</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <!-- Sentence 1 -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-bold text-slate-900 text-sm sm:text-base">
+                1. <span class="main-clause-pill">John suffers from Asthma</span> <span class="conj-pill">but</span> <span class="main-clause-pill">(he) attends school regularly.</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                  • <strong>Clause 1:</strong> "John suffers from Asthma" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Clause 2:</strong> "(John/he) attends school regularly" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Conjunction:</strong> "but" (Coordinating) → <strong>Compound Sentence</strong>
+                </div>
+                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200 telugu-box text-amber-950">
+                  <strong>తెలుగు వివరణ:</strong> ఇందులో రెండు భాగాలూ స్వతంత్ర అర్థాన్ని ఇచ్చే <strong>Main Clauses</strong>. వీటిని <em>'but'</em> (కానీ) అనే Coordinating Conjunction కలిపింది కాబట్టి ఇది <strong>Compound Sentence</strong>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Sentence 2 -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-bold text-slate-900 text-sm sm:text-base">
+                2. <span class="main-clause-pill">We like songs</span> <span class="conj-pill">but</span> <span class="main-clause-pill">they like games.</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                  • <strong>Clause 1:</strong> "We like songs" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Clause 2:</strong> "they like games" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Conjunction:</strong> "but" (Coordinating) → <strong>Compound Sentence</strong>
+                </div>
+                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200 telugu-box text-amber-950">
+                  <strong>తెలుగు వివరణ:</strong> "మాకు పాటలు ఇష్టం" (Main Clause), "వారికి ఆటలు ఇష్టం" (Main Clause). రెండూ ప్రధాన వాక్య భాగాలే కాబట్టి ఇది <strong>Compound Sentence</strong>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Sentence 3 -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-bold text-slate-900 text-sm sm:text-base">
+                3. <span class="main-clause-pill">Japan attacked China in 1937</span> <span class="conj-pill">and</span> <span class="main-clause-pill">(Japan) wounded many soldiers.</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                  • <strong>Clause 1:</strong> "Japan attacked China in 1937" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Clause 2:</strong> "(Japan) wounded many soldiers" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Conjunction:</strong> "and" (Coordinating) → <strong>Compound Sentence</strong>
+                </div>
+                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200 telugu-box text-amber-950">
+                  <strong>తెలుగు వివరణ:</strong> "జపాన్ 1937లో చైనాపై దాడి చేసింది" (Main Clause) మరియు "చాలా మంది సైనికులను గాయపరిచింది" (Main Clause). <em>'and'</em> తో కలిపిన <strong>Compound Sentence</strong>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Sentence 4 -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-bold text-slate-900 text-sm sm:text-base">
+                4. <span class="sub-clause-pill"><span class="conj-pill">If</span> the rain stops,</span> <span class="main-clause-pill">we will go out.</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                  • <strong>Clause 1:</strong> "If the rain stops" → <span class="text-sky-700 font-extrabold">Subordinate Clause</span><br/>
+                  • <strong>Clause 2:</strong> "we will go out" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Conjunction:</strong> "If" (Subordinating) → <strong>Complex Sentence</strong>
+                </div>
+                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200 telugu-box text-amber-950">
+                  <strong>తెలుగు వివరణ:</strong> "ఒకవేళ వర్షం ఆగితే..." (If the rain stops) అనేది పూర్తి అర్థాన్ని ఇవ్వదు కాబట్టి ఇది <strong>Subordinate Clause</strong>. "మేము బయటకు వెళ్తాము" (we will go out) అనేది <strong>Main Clause</strong>. కాబట్టి ఇది <strong>Complex Sentence</strong>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Sentence 5 -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-bold text-slate-900 text-sm sm:text-base">
+                5. <span class="main-clause-pill">She was unhappy</span> <span class="conj-pill">or</span> <span class="main-clause-pill">she was upset.</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                  • <strong>Clause 1:</strong> "She was unhappy" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Clause 2:</strong> "she was upset" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Conjunction:</strong> "or" (Coordinating) → <strong>Compound Sentence</strong>
+                </div>
+                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200 telugu-box text-amber-950">
+                  <strong>తెలుగు వివరణ:</strong> ఇందులో రెండు భాగాలూ <strong>Main Clauses</strong>. వీటిని <em>'or'</em> (లేదా) అనే Coordinating Conjunction కలిపింది కాబట్టి ఇది <strong>Compound Sentence</strong>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Sentence 6 -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <div class="font-bold text-slate-900 text-sm sm:text-base">
+                6. <span class="main-clause-pill">The shops were closed</span> <span class="sub-clause-pill"><span class="conj-pill">because</span> there was a strike.</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                  • <strong>Clause 1:</strong> "The shops were closed" → <span class="text-emerald-700 font-extrabold">Main Clause</span><br/>
+                  • <strong>Clause 2:</strong> "because there was a strike" → <span class="text-sky-700 font-extrabold">Subordinate Clause</span><br/>
+                  • <strong>Conjunction:</strong> "because" (Subordinating) → <strong>Complex Sentence</strong>
+                </div>
+                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-200 telugu-box text-amber-950">
+                  <strong>తెలుగు వివరణ:</strong> "దుకాణాలు మూసివేయబడ్డాయి" (The shops were closed) అనేది <strong>Main Clause</strong>. "ఎందుకంటే సమ్మె జరిగింది" (because there was a strike) అనేది <em>'because'</em> తో మొదలైన <strong>Subordinate Clause</strong>. ఇది <strong>Complex Sentence</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDITING PASSAGE: TENALI RAMA KRISHNA (PAGE 132) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 132 • Editing</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Read the following passage. Every numbered sentence has an error. Identify and edit it (+15 pts):</h3>
+        </div>
+
+        <!-- Original vs Corrected Passage -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <div class="p-4 rounded-xl bg-rose-50 border border-rose-200 space-y-2">
+            <div class="font-extrabold text-rose-950">❌ Original Passage with Errors (Page 132):</div>
+            <p class="leading-relaxed text-slate-800">
+              (1) Tenali Rama Krishna was not <span class="underline decoration-rose-600 font-bold text-rose-700">see</span> in the royal court.
+              (2) The king sent guards to search for him and bring him to the court, but they could not find <span class="underline decoration-rose-600 font-bold text-rose-700">them</span>.
+              (3) They went to the court and <span class="underline decoration-rose-600 font-bold text-rose-700">reporting</span> this to the king.
+              (4) The King grew worried and asked the guards to search more <span class="underline decoration-rose-600 font-bold text-rose-700">careful</span>.
+              (5) After some <span class="underline decoration-rose-600 font-bold text-rose-700">day</span>, the guards found Tenali Rama Krishna.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 space-y-2">
+            <div class="font-extrabold text-emerald-950">✅ Corrected Passage:</div>
+            <p class="leading-relaxed text-slate-800">
+              (1) Tenali Rama Krishna was not <span class="bg-emerald-200 px-1.5 py-0.5 rounded font-extrabold text-emerald-950">seen</span> in the royal court.
+              (2) The king sent guards to search for him and bring him to the court, but they could not find <span class="bg-emerald-200 px-1.5 py-0.5 rounded font-extrabold text-emerald-950">him</span>.
+              (3) They went to the court and <span class="bg-emerald-200 px-1.5 py-0.5 rounded font-extrabold text-emerald-950">reported</span> this to the king.
+              (4) The King grew worried and asked the guards to search more <span class="bg-emerald-200 px-1.5 py-0.5 rounded font-extrabold text-emerald-950">carefully</span>.
+              (5) After some <span class="bg-emerald-200 px-1.5 py-0.5 rounded font-extrabold text-emerald-950">days</span>, the guards found Tenali Rama Krishna.
+            </p>
+          </div>
+        </div>
+
+        <!-- Detailed Line-by-Line Grammar & Telugu Explanation -->
+        <div class="space-y-2 text-xs sm:text-sm">
+          <div class="font-extrabold text-slate-900">Line-by-Line Error Analysis (ప్రతి తప్పుకు విపులమైన తెలుగు వ్యాకరణ వివరణ):</div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+            <div onclick="addScore('edit-1', 3)" class="p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-emerald-400">
+              <strong>(1) Error:</strong> <del class="text-rose-600">see</del> → <strong class="text-emerald-700">seen</strong><br/>
+              <span class="telugu-box text-xs text-slate-700"><strong>వివరణ:</strong> "was not ___" అనేది Passive Voice లో ఉంది. కాబట్టి 'was not' తర్వాత Verb 3వ రూపం (Past Participle: <em>see - saw - <strong>seen</strong></em>) రావాలి.</span>
+            </div>
+            <div onclick="addScore('edit-2', 3)" class="p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-emerald-400">
+              <strong>(2) Error:</strong> <del class="text-rose-600">them</del> → <strong class="text-emerald-700">him</strong><br/>
+              <span class="telugu-box text-xs text-slate-700"><strong>వివరణ:</strong> భటులు వెతుకుతున్నది తెనాలి రామకృష్ణ అనే ఒక్క వ్యక్తి కోసమే (ఏకవచనం). కాబట్టి బహువచనం 'them' కు బదులుగా <strong>'him'</strong> (అతనిని) అని ఉండాలి.</span>
+            </div>
+            <div onclick="addScore('edit-3', 3)" class="p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-emerald-400">
+              <strong>(3) Error:</strong> <del class="text-rose-600">reporting</del> → <strong class="text-emerald-700">reported</strong><br/>
+              <span class="telugu-box text-xs text-slate-700"><strong>వివరణ:</strong> వాక్యం మొదట్లో <em>"They went"</em> (Simple Past Tense) ఉంది. 'and' తర్వాత వచ్చే రెండవ క్రియ కూడా అదే కాలంలో (Past Tense: <strong>reported</strong>) ఉండాలి.</span>
+            </div>
+            <div onclick="addScore('edit-4', 3)" class="p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-emerald-400">
+              <strong>(4) Error:</strong> <del class="text-rose-600">careful</del> → <strong class="text-emerald-700">carefully</strong><br/>
+              <span class="telugu-box text-xs text-slate-700"><strong>వివరణ:</strong> 'search' (వెతకడం) అనే పని ఎలా చేయాలో చెప్పే పదం కాబట్టి విశేషణం (Adjective: careful) కాకుండా క్రియా విశేషణం (Adverb: <strong>carefully</strong> - జాగ్రత్తగా) వాడాలి.</span>
+            </div>
+            <div onclick="addScore('edit-5', 3)" class="md:col-span-2 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-emerald-400">
+              <strong>(5) Error:</strong> <del class="text-rose-600">After some day</del> → <strong class="text-emerald-700">After some days</strong><br/>
+              <span class="telugu-box text-xs text-slate-700"><strong>వివరణ:</strong> 'some' (కొన్ని) అనే పదం తర్వాత లెక్కించగల నామవాచకం బహువచనంలో (Plural noun: <strong>days</strong> - కొన్ని రోజుల తర్వాత) ఉండాలి.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <button onclick="switchTab('tab-vocab')" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <button onclick="switchTab('tab-writing')" class="bg-rose-800 hover:bg-rose-900 text-white font-bold px-5 py-2.5 rounded-xl shadow flex items-center gap-2">
+          Next: Pages 133–135 Writing, Listening & Oral <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- TAB 5: WRITING, LISTENING & ORAL ACTIVITY (PG 133–135)     -->
+    <!-- ========================================================== -->
+    <div id="tab-writing" class="tab-panel hidden space-y-6">
+
+      <!-- WRITING I: DEVELOPING HEADLINES (PAGES 133–134) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Pages 133–134 • Writing I</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Developing Headlines for News Reports (వార్తా శీర్షికలు రాయడం)</h3>
+        </div>
+
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm space-y-1.5 telugu-box">
+          <div class="font-extrabold text-amber-950">📰 వార్తా శీర్షికలు (Headlines) రాసేటప్పుడు గుర్తుంచుకోవాల్సిన నియమాలు (Page 133):</div>
+          <ul class="list-disc list-inside space-y-1">
+            <li>వార్తలోని ముఖ్యాంశాన్ని (Main Idea / Gist) మాత్రమే తక్కువ పదాలలో ఆకర్షణీయంగా రాయాలి.</li>
+            <li>గతంలో జరిగిన సంఘటనలకు కూడా <strong>Simple Present Tense</strong> వాడాలి (ఉదా: <em>Hyderabad celebrates kite festival</em>).</li>
+            <li>భవిష్యత్తులో జరగబోయే పనులకు <strong>'to + V1' (Infinitive)</strong> వాడాలి (ఉదా: <em>Chief Minister to inaugurate Craft Bazars</em>).</li>
+            <li>Passive Voice లో సహాయక క్రియలను (is/are/was/were) వదిలేసి కేవలం <strong>V3</strong> మాత్రమే రాయాలి (ఉదా: <em>Examination results declared</em>).</li>
+            <li>Articles (a, an, the) మరియు చివరన చుక్క (Full-stop) పెట్టకూడదు.</li>
+          </ul>
+        </div>
+
+        <!-- All 4 News Reports with Headlines & Telugu Explanations -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <!-- News 1 -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="text-xs text-slate-600 italic">
+              <strong>Report 1 (Page 133):</strong> “Hyderabad: with an alarming rise in cases of missing people, especially women and children since 2009, the Police have stepped up measures to trace them in co-ordination with various agencies and police forces.”
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-100 border border-emerald-300 font-extrabold text-emerald-950">
+              📰 Headline: Police Step Up Measures to Trace Missing People <br/>
+              <span class="text-xs font-semibold text-emerald-800">(Or: Alarming Rise in Missing Cases; Hyderabad Police Step Up Action)</span>
+            </div>
+            <p class="text-xs text-slate-700 telugu-box">
+              <strong>తెలుగు వివరణ:</strong> హైదరాబాద్‌లో 2009 నుండి కనిపించకుండా పోతున్న మహిళలు, పిల్లల కేసులు పెరుగుతుండటంతో, వారిని కనిపెట్టడానికి పోలీసులు చర్యలను ముమ్మరం చేశారు. కాబట్టి <em>"Police Step Up Measures to Trace Missing People"</em> అనేది సరైన శీర్షిక.
+            </p>
+          </div>
+
+          <!-- News 2 -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="text-xs text-slate-600 italic">
+              <strong>Report 2 (Page 134):</strong> “The full moon that rises on this Friday night, August 31, 2012, will be a Blue Moon. That’s what it has been dubbed as in modern folklore of the west. But will it actually be blue?”
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-100 border border-emerald-300 font-extrabold text-emerald-950">
+              📰 Headline: Blue Moon to Rise This Friday Night <br/>
+              <span class="text-xs font-semibold text-emerald-800">(Or: Rare ‘Blue Moon’ on Friday Night)</span>
+            </div>
+            <p class="text-xs text-slate-700 telugu-box">
+              <strong>తెలుగు వివరణ:</strong> ఈ శుక్రవారం రాత్రి ఆకాశంలో 'బ్లూ మూన్' (నిండు చంద్రుడు) కనువిందు చేయబోతున్నాడు. భవిష్యత్తులో జరగబోయే విషయం కాబట్టి 'to rise' ఉపయోగించి <em>"Blue Moon to Rise This Friday Night"</em> అని శీర్షిక రాయాలి.
+            </p>
+          </div>
+
+          <!-- News 3 -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="text-xs text-slate-600 italic">
+              <strong>Report 3 (Page 134):</strong> “If you look at the last three months, I am really practising well. I am looking forward to playing my first game after a year.”
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-100 border border-emerald-300 font-extrabold text-emerald-950">
+              📰 Headline: Player Ready for Comeback Game After a Year <br/>
+              <span class="text-xs font-semibold text-emerald-800">(Or: Looking Forward to First Game After a Year)</span>
+            </div>
+            <p class="text-xs text-slate-700 telugu-box">
+              <strong>తెలుగు వివరణ:</strong> గత మూడు నెలలుగా బాగా సాధన చేస్తున్నానని, ఒక సంవత్సరం విరామం తర్వాత తన మొదటి మ్యాచ్ ఆడటానికి ఎదురుచూస్తున్నానని ఒక క్రీడాకారుడు చెప్పిన మాట ఇది.
+            </p>
+          </div>
+
+          <!-- News 4 -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="text-xs text-slate-600 italic">
+              <strong>Report 4 (Page 134):</strong> “Next time your cell phone runs out of battery, you can charge it by just holding it in your hands as the scientist claims to have developed a new technology that turns body heat into electricity.”
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-100 border border-emerald-300 font-extrabold text-emerald-950">
+              📰 Headline: New Tech Charges Cell Phones Using Body Heat <br/>
+              <span class="text-xs font-semibold text-emerald-800">(Or: Scientist Develops Tech to Turn Body Heat into Electricity)</span>
+            </div>
+            <p class="text-xs text-slate-700 telugu-box">
+              <strong>తెలుగు వివరణ:</strong> మన శరీర ఉష్ణోగ్రతను (body heat) విద్యుత్తుగా మార్చి, సెల్‌ఫోన్‌ను చేతిలో పట్టుకోవడం ద్వారానే ఛార్జింగ్ చేసే కొత్త సాంకేతికతను శాస్త్రవేత్త కనుగొన్నారు.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WRITING II & III: OLD AGE HOMES DISCUSSION & ARTICLE (PAGES 134–135) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-5">
+        <div class="border-b border-slate-100 pb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Pages 134–135 • Writing II & III</span>
+          <h3 class="text-lg font-extrabold text-slate-900">Students Serving in an Old Age Home — Discussion Points & Article</h3>
+        </div>
+
+        <!-- II. 4 Discussion Points -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm">
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">1. Do old people go to old age homes on their own or are they forced to go there?</div>
+            <p class="text-slate-700"><strong>Ans:</strong> Mostly, old people are forced by circumstances or neglected by their children to go to old age homes. Very few go on their own when their children live abroad and there is no one to look after them.</p>
+            <p class="text-xs text-amber-900 telugu-box"><strong>తెలుగులో:</strong> చాలావరకు వృద్ధులు తమ పిల్లల నిరాదరణ వల్ల లేదా పరిస్థితుల ప్రభావం వల్ల బలవంతంగానే వృద్ధాశ్రమాలకు వెళ్తున్నారు.</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">2. What are the conditions which make people leave their own homes and go to an old age home?</div>
+            <p class="text-slate-700"><strong>Ans:</strong> Breakdown of joint families into nuclear families, lack of love and patience among children, financial problems, generation gap, and chronic health issues force elderly parents into old age homes.</p>
+            <p class="text-xs text-amber-900 telugu-box"><strong>తెలుగులో:</strong> ఉమ్మడి కుటుంబాలు విచ్ఛిన్నం కావడం, పిల్లల్లో ప్రేమ-ఓర్పు తగ్గడం, ఆర్థిక ఇబ్బందులు మరియు అనారోగ్య సమస్యల వల్ల వృద్ధులు ఇళ్లను వదిలి వెళ్లాల్సి వస్తోంది.</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">3. In what way are the conditions at an old age home different from those at home?</div>
+            <p class="text-slate-700"><strong>Ans:</strong> An old age home may provide basic food, shelter, and medical care on a fixed schedule, but it lacks the warmth, emotional bonding, love of grandchildren, and personal freedom found in one's own family home.</p>
+            <p class="text-xs text-amber-900 telugu-box"><strong>తెలుగులో:</strong> వృద్ధాశ్రమంలో సమయానికి ఆహారం, మందులు దొరకవచ్చు కానీ సొంత ఇంట్లో ఉండే ఆప్యాయత, మనవళ్లు-మనవరాళ్ల ప్రేమ అక్కడ లభించవు.</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">4. Are there any ways to prevent old people from going to old age homes?</div>
+            <p class="text-slate-700"><strong>Ans:</strong> Yes! By inculcating moral values and gratitude in children from school age, spending quality time with elderly parents, providing government pensions/healthcare at home, and respecting their wisdom.</p>
+            <p class="text-xs text-amber-900 telugu-box"><strong>తెలుగులో:</strong> చిన్నప్పటి నుండే పిల్లల్లో తల్లిదండ్రుల పట్ల కృతజ్ఞతా భావం, నైతిక విలువలు పెంపొందించడం ద్వారా వృద్ధులు ఆశ్రమాలకు వెళ్లకుండా ఆపవచ్చు.</p>
+          </div>
+        </div>
+
+        <!-- III. Complete Article on Old Age Homes -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-rose-50/70 border border-rose-200 space-y-2.5 text-xs sm:text-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-extrabold text-rose-950 text-base">III. Model Article: “Old Age Homes — Need for Love and Gratitude Towards the Elderly”</span>
+            <button onclick="speakText(document.getElementById('old-age-article').innerText)" class="bg-rose-800 text-white text-xs font-bold px-3 py-1.5 rounded-lg"><i class="fa-solid fa-volume-high"></i> Listen</button>
+          </div>
+          <div id="old-age-article" class="space-y-2 text-slate-800 leading-relaxed">
+            <p>
+              <strong>What are Old Age Homes?</strong> Old age homes are residential institutions that provide shelter, food, and medical care to senior citizens who are unable to stay with their families or are left alone in their twilight years.
+            </p>
+            <p>
+              <strong>Why do old people go there?</strong> In modern society, the traditional joint family system has given way to busy nuclear families. Due to economic pressures, migration to cities/abroad, lack of time, and sometimes selfish neglect by children (as seen in <em>The Tattered Blanket</em>), elderly parents feel lonely and unwanted, forcing them to seek refuge in old age homes.
+            </p>
+            <p>
+              <strong>Facilities at Home vs. Old Age Homes:</strong> While good old age homes provide timely meals, beds, nursing care, and the company of fellow senior citizens, they can never replace the emotional security, affection of children, and playful joy of grandchildren at home. Parents sacrifice their youth and earnings to bring up their children. Therefore, it is our foremost duty and gratitude to care for our parents with love and dignity in our own homes!
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-rose-200 text-xs sm:text-sm text-rose-950 telugu-box">
+            <strong>వ్యాసం యొక్క తెలుగు సారాంశం:</strong> ఆదరణ లేని వృద్ధులకు ఆశ్రయం, ఆహారం, వైద్యం అందించే కేంద్రాలే వృద్ధాశ్రమాలు (Old Age Homes). నేటి ఆధునిక యుగంలో ఉమ్మడి కుటుంబాలు తగ్గిపోవడం, పిల్లలు ఉద్యోగాల కోసం దూర ప్రాంతాలకు వెళ్లడం మరియు కొందరు పిల్లలు తల్లిదండ్రులను నిర్లక్ష్యం చేయడం వల్ల వృద్ధులు ఆశ్రమాలలో చేరుతున్నారు. అక్కడ భోజనం, వసతి ఉన్నప్పటికీ సొంత ఇంట్లో కుటుంబ సభ్యుల మధ్య ఉండే ప్రేమ, ఆప్యాయత లభించవు. మనల్ని కని పెంచిన తల్లిదండ్రులను వృద్ధాప్యంలో కంటికి రెప్పలా చూసుకోవడమే మనం వారికి చూపే నిజమైన కృతజ్ఞత (Gratitude).
+          </div>
+        </div>
+      </div>
+
+      <!-- LISTENING SECTION (PAGE 135 & APPENDIX-I PAGE 145) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 135 & Appendix-I Page 145 • Listening</span>
+            <h3 class="text-lg font-extrabold text-slate-900">Listening: “An Announcement in a School” (Enrolment Drive Programme)</h3>
+          </div>
+          <button onclick="speakText(document.getElementById('listening-announcement-text').innerText)" class="bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold px-3.5 py-2 rounded-xl shadow flex items-center gap-1.5">
+            <i class="fa-solid fa-volume-high"></i> Play Headmaster's Announcement
+          </button>
+        </div>
+
+        <!-- Appendix-I Page 145 Text -->
+        <div id="listening-announcement-text" class="p-4 rounded-xl bg-slate-900 text-amber-50 text-xs sm:text-sm leading-relaxed space-y-1.5">
+          <div class="text-amber-300 font-extrabold uppercase tracking-wider text-xs">📢 Audio Script (From Appendix-I, Page 145 — Unit 8: An Announcement in a School):</div>
+          <p>
+            “Dear students, I am to inform you that we are going to start an <strong>‘Enrolment Drive Programme’</strong> next week. We will go to the nearby slums in our locality for 3 days and see if there are any children who are not studying in any school. There will be 10 teams, each consisting of 6 students. I want all the students and teachers of classes VIII and IX to join this mission. <strong>Mr. Rajkumar and Ms. Christina</strong> will be joining us in our mission. They will help us in all the aspects related to the programme. Children, now those who volunteer to take the lead in teams should meet their class teachers after the lunch hour.”
+          </p>
+        </div>
+
+        <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+          <strong>ప్రకటన తెలుగు అనువాదం:</strong> "ప్రియమైన విద్యార్థులారా, వచ్చే వారం మనం <strong>'బడిబయటి పిల్లల నమోదు కార్యక్రమం' (Enrolment Drive Programme)</strong> ప్రారంభించబోతున్నాము. మనం 3 రోజుల పాటు మన ప్రాంతంలోని మురికివాడలకు వెళ్లి, ఏ పాఠశాలలోనూ చదవని పిల్లలు ఎవరైనా ఉన్నారేమో గుర్తిస్తాము. ఇందులో 10 బృందాలు ఉంటాయి, ఒక్కో బృందంలో 6 మంది విద్యార్థులు ఉంటారు. 8 మరియు 9వ తరగతి విద్యార్థులు, ఉపాధ్యాయులందరూ ఈ మహత్తర కార్యంలో (mission) పాల్గొనాలని కోరుతున్నాను. <strong>శ్రీ రాజ్‌కుమార్ మరియు శ్రీమతి క్రిస్టినా</strong> గారు మనతో చేరి అన్ని విధాలా సహాయం చేస్తారు. బృందాలకు నాయకత్వం వహించాలనుకునే వాలంటీర్లు భోజన విరామం తర్వాత తమ తరగతి ఉపాధ్యాయులను కలవండి."
+        </div>
+
+        <!-- 4 Listening Questions & Answers (Page 135) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm">
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">1. What is the announcement about?</div>
+            <p class="text-emerald-900 font-medium"><strong>Ans:</strong> The announcement is about starting an <strong>‘Enrolment Drive Programme’</strong> next week to identify out-of-school children in nearby slums and enrol them in school.</p>
+            <p class="text-xs text-slate-600 telugu-box">తెలుగు: వచ్చే వారం మురికివాడల్లోని బడిబయటి పిల్లలను పాఠశాలలో చేర్పించడానికి నిర్వహించే 'ఎన్‌రోల్‌మెంట్ డ్రైవ్ ప్రోగ్రామ్' గురించి ఈ ప్రకటన.</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">2. Who are the special guests joining their mission?</div>
+            <p class="text-emerald-900 font-medium"><strong>Ans:</strong> <strong>Mr. Rajkumar and Ms. Christina</strong> are the special guests joining their mission.</p>
+            <p class="text-xs text-slate-600 telugu-box">తెలుగు: <strong>శ్రీ రాజ్‌కుమార్ మరియు శ్రీమతి క్రిస్టినా</strong> ఈ మిషన్‌లో పాల్గొంటున్న ప్రత్యేక అతిథులు.</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">3. What are the students asked to do in the programme?</div>
+            <p class="text-emerald-900 font-medium"><strong>Ans:</strong> The students of classes VIII and IX are asked to form 10 teams (6 students each), visit nearby slums for 3 days to find children not studying in any school, and volunteers are asked to meet their class teachers after lunch.</p>
+            <p class="text-xs text-slate-600 telugu-box">తెలుగు: 8, 9 తరగతుల విద్యార్థులు 10 బృందాలుగా ఏర్పడి 3 రోజుల పాటు మురికివాడల్లోని బడిబయటి పిల్లలను గుర్తించాలి.</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <div class="font-extrabold text-slate-900">4. Why does the Headmaster call it a mission?</div>
+            <p class="text-emerald-900 font-medium"><strong>Ans:</strong> The Headmaster calls it a ‘mission’ because bringing underprivileged, out-of-school children into school to give them the light of education is a <strong>noble social service and a sacred goal</strong>.</p>
+            <p class="text-xs text-slate-600 telugu-box">తెలుగు: పేద పిల్లలను బడిలో చేర్పించి వారికి విద్యాదానం చేయడం ఒక పవిత్రమైన సామాజిక ఆశయం కాబట్టి ప్రధానోపాధ్యాయులు దీనిని 'మిషన్' అని పిలిచారు.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ORAL ACTIVITY: VOTE OF THANKS (PAGE 135) -->
+      <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-rose-700">Textbook Page 135 • Oral Activity</span>
+            <h3 class="text-lg font-extrabold text-slate-900">Prepare a ‘Vote of Thanks’ after Completing the Enrolment Drive Programme</h3>
+          </div>
+          <button onclick="speakText(document.getElementById('vote-of-thanks-speech').innerText)" class="bg-rose-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow flex items-center gap-1.5">
+            <i class="fa-solid fa-volume-high"></i> Listen to Vote of Thanks
+          </button>
+        </div>
+
+        <div id="vote-of-thanks-speech" class="p-4 sm:p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm leading-relaxed space-y-2.5 text-slate-800">
+          <div class="font-extrabold text-emerald-950 text-base">🎤 Model Vote of Thanks Speech (వందన సమర్పణ ప్రసంగం):</div>
+          <p>
+            “Respected Headmaster, our esteemed special guests <strong>Mr. Rajkumar</strong> and <strong>Mrs. Christina</strong>, beloved teachers, and my dear fellow student volunteers—a very warm good afternoon to one and all!
+          </p>
+          <p>
+            It is my great privilege to propose the <strong>Vote of Thanks</strong> on the successful completion of our three-day <strong>‘Enrolment Drive Programme’</strong>. Over the last three days, our 10 teams visited the nearby slums, counselled parents, and successfully enrolled many out-of-school children into our school.
+          </p>
+          <p>
+            First and foremost, I extend my heartfelt gratitude to our special guests, <strong>Mr. Rajkumar and Mrs. Christina</strong>, who guided our teams at every step, spoke convincingly to the parents in the slums, and helped us in all aspects of this noble mission. We earnestly request both of you to continue extending your valuable service and guidance to our school in the future as well.
+          </p>
+          <p>
+            I also thank our respected <strong>Headmaster</strong> for inspiring us to take up this mission, our dedicated <strong>teachers</strong> of Classes VIII and IX for leading us, and all my fellow <strong>student volunteers</strong> for their tireless teamwork. Thank you all from the bottom of my heart!”
+          </p>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 telugu-box">
+          <strong>వందన సమర్పణ (Vote of Thanks) - తెలుగు అనువాదం & వివరణ:</strong> <br/>
+          "గౌరవనీయులైన ప్రధానోపాధ్యాయుల గారికి, మన ప్రత్యేక అతిథులు <strong>శ్రీ రాజ్‌కుమార్</strong> మరియు <strong>శ్రీమతి క్రిస్టినా</strong> గారికి, ఉపాధ్యాయులకు మరియు నా తోటి విద్యార్థి వాలంటీర్లకు శుభ మధ్యాహ్నం! మనం మూడు రోజుల పాటు నిర్వహించిన <strong>'బడిబయటి పిల్లల నమోదు కార్యక్రమం' (Enrolment Drive Programme)</strong> ఘనవిజయం సాధించిన సందర్భంగా వందన సమర్పణ చేయడం నా అదృష్టంగా భావిస్తున్నాను. ఈ కార్యక్రమంలో మనతో పాటు మురికివాడల్లో పర్యటించి, తల్లిదండ్రులకు అవగాహన కల్పించి, ప్రతి అడుగులోనూ మనకు మార్గనిర్దేశం చేసిన <strong>శ్రీ రాజ్‌కుమార్ మరియు శ్రీమతి క్రిస్టినా</strong> గారికి మా హృదయపూర్వక కృతజ్ఞతలు. భవిష్యత్తులో కూడా మీ విలువైన సేవలను మా పాఠశాలకు అందించాలని కోరుతున్నాము. అలాగే ఈ మహత్తర కార్యక్రమాన్ని రూపొందించిన ప్రధానోపాధ్యాయులకు, 8, 9 తరగతుల ఉపాధ్యాయులకు మరియు కష్టపడి పనిచేసిన నా తోటి విద్యార్థులందరికీ నా హృదయపూర్వక ధన్యవాదాలు!"
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <button onclick="switchTab('tab-grammar')" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-4 py-2.5 rounded-xl">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <button onclick="switchTab('tab-report')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-5 py-2.5 rounded-xl shadow flex items-center gap-2">
+          Final Step: Submit Watch Report <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- TAB 6: SUBMIT STUDENT WATCH & STUDY REPORT                 -->
+    <!-- ========================================================== -->
+    <div id="tab-report" class="tab-panel hidden space-y-6">
+      <section class="bg-gradient-to-br from-slate-900 via-rose-950 to-slate-900 text-white rounded-3xl p-5 sm:p-8 shadow-2xl border-2 border-amber-400/60 space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/15 pb-4">
+          <div>
+            <span class="bg-amber-400 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+              <i class="fa-solid fa-user-check"></i> Student Lesson & Screen-Time Report (Pages 123–135)
+            </span>
+            <h2 class="text-xl sm:text-2xl font-extrabold mt-2">
+              Submit Your Watching & Exercise Report
+            </h2>
+            <p class="text-xs sm:text-sm text-amber-200 mt-1">
+              Your active screen time, quiz score, and reflection on <em>"Dr. Dwarakanath Kotnis"</em> will be sent directly to your teacher at <strong>balaswamysm@gmail.com</strong>.
+            </p>
+          </div>
+
+          <!-- Live Telemetry Summary -->
+          <div class="grid grid-cols-3 gap-2 bg-white/10 p-3 rounded-2xl border border-white/15 text-center shrink-0">
+            <div class="px-2">
+              <div class="text-[10px] uppercase text-amber-200 font-bold">Watch Time</div>
+              <div id="reportTimerDisplay" class="text-base sm:text-lg font-mono font-extrabold text-amber-300">00:00</div>
+            </div>
+            <div class="px-2 border-x border-white/15">
+              <div class="text-[10px] uppercase text-amber-200 font-bold">Tabs Read</div>
+              <div id="tabsVisitedDisplay" class="text-base sm:text-lg font-extrabold text-white">1 / 6</div>
+            </div>
+            <div class="px-2">
+              <div class="text-[10px] uppercase text-amber-200 font-bold">Score</div>
+              <div id="reportScoreDisplay" class="text-base sm:text-lg font-extrabold text-emerald-300">0 / 60</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HTML Form connected to Formspree (https://formspree.io/f/xvkkvebj) -->
+        <form id="studentReportForm" action="https://formspree.io/f/xvkkvebj" method="POST" class="space-y-4">
+          <input type="hidden" name="_subject" id="formSubject" value="Class 8 Unit 8A Dr. Kotnis (Pg 123-135) Student Watch Report" />
+          <input type="hidden" name="teacher_email" value="balaswamysm@gmail.com" />
+          <input type="hidden" name="lesson_unit" value="Class 8 English - Unit 8A: Dr. Dwarakanath Kotnis (Pages 123 to 135)" />
+          <input type="hidden" name="total_screen_time_formatted" id="hiddenScreenTime" value="0m 0s" />
+          <input type="hidden" name="total_screen_time_seconds" id="hiddenScreenSeconds" value="0" />
+          <input type="hidden" name="quiz_score" id="hiddenScore" value="0 / 60" />
+          <input type="hidden" name="sections_visited" id="hiddenSectionsVisited" value="1. Face Sheet & Lesson" />
+          <input type="hidden" name="submission_timestamp" id="hiddenTimestamp" value="" />
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-1">Student Full Name *</label>
+              <input type="text" name="student_name" id="studentName" required placeholder="Enter your full name" class="w-full rounded-xl bg-white/95 text-slate-900 px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-amber-400 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-1">Roll Number / Admission No. *</label>
+              <input type="text" name="roll_number" id="rollNumber" required placeholder="e.g., 12" class="w-full rounded-xl bg-white/95 text-slate-900 px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-amber-400 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-1">Class & Section *</label>
+              <input type="text" name="class_section" id="classSection" required value="Class 8" placeholder="Class 8 - Section A" class="w-full rounded-xl bg-white/95 text-slate-900 px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-amber-400 focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-1">School Name</label>
+              <input type="text" name="school_name" id="schoolName" placeholder="Enter your School Name" class="w-full rounded-xl bg-white/95 text-slate-900 px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-amber-400 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-1">Student / Parent Contact (Optional)</label>
+              <input type="text" name="contact_info" id="contactInfo" placeholder="Mobile number or email" class="w-full rounded-xl bg-white/95 text-slate-900 px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-amber-400 focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-amber-200 mb-1">What inspired you the most about Dr. Dwarakanath Kotnis? *</label>
+            <textarea name="student_reflection" id="studentReflection" rows="2" required placeholder="e.g., I was deeply inspired by Dr. Kotnis's selfless service to wounded soldiers in China, operating for 72 hours non-stop without sleep." class="w-full rounded-xl bg-white/95 text-slate-900 p-3 text-sm font-medium focus:ring-2 focus:ring-amber-400 focus:outline-none"></textarea>
+          </div>
+
+          <div id="formStatusBox" class="hidden p-4 rounded-xl text-sm font-bold"></div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+            <div class="text-xs text-amber-200 flex items-center gap-1.5">
+              <i class="fa-solid fa-envelope-circle-check text-amber-300"></i>
+              Report sent to: <span class="underline font-semibold">balaswamysm@gmail.com</span>
+            </div>
+
+            <button type="submit" id="submitReportBtn" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-300 active:scale-95 text-slate-950 font-extrabold text-sm sm:text-base px-6 py-3 rounded-xl shadow-lg flex items-center justify-center gap-2 transition">
+              <i class="fa-solid fa-paper-plane"></i> Submit Watching & Exercise Report
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- VOCABULARY POPUP MODAL -->
+  <div id="wordModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl border border-rose-200 space-y-3 text-center">
+      <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center mx-auto text-xl">
+        <i class="fa-solid fa-book-open-reader"></i>
+      </div>
+      <h4 id="modalWordTitle" class="text-lg font-extrabold text-rose-950">Word</h4>
+      <p id="modalWordMeaning" class="text-sm text-slate-700 leading-relaxed telugu-box">Meaning</p>
+      <div class="flex justify-center gap-2 pt-2">
+        <button id="modalSpeakBtn" class="bg-rose-800 text-white text-xs font-bold px-4 py-2 rounded-xl">
+          <i class="fa-solid fa-volume-high"></i> Pronounce
+        </button>
+        <button onclick="closeWordModal()" class="bg-slate-200 text-slate-800 text-xs font-bold px-4 py-2 rounded-xl">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // ==========================================
+    // 1. LIVE SCREEN TIME / WATCH TIMER
+    // ==========================================
+    let activeSeconds = 0;
+    let isPageActive = true;
+    const visitedTabs = new Set(['tab-lesson']);
+    let currentScore = 0;
+    const answeredItems = new Set();
+
+    document.addEventListener('visibilitychange', () => {
+      isPageActive = !document.hidden;
+    });
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    setInterval(() => {
+      if (isPageActive) {
+        activeSeconds++;
+        const formatted = formatTime(activeSeconds);
+        document.getElementById('headerTimer').innerText = formatted;
+        document.getElementById('reportTimerDisplay').innerText = formatted;
+        document.getElementById('hiddenScreenTime').value = `${Math.floor(activeSeconds / 60)}m ${activeSeconds % 60}s (${formatted})`;
+        document.getElementById('hiddenScreenSeconds').value = activeSeconds;
+      }
+    }, 1000);
+
+    // ==========================================
+    // 2. TAB NAVIGATION & PROGRESS TRACKER
+    // ==========================================
+    const tabLabels = {
+      'tab-lesson': '1. Face Sheet & Lesson (Pg 123-129)',
+      'tab-comp': '2. Comprehension & Bio-Form (Pg 129-130)',
+      'tab-vocab': '3. Vocabulary & Heart Idioms (Pg 130-131)',
+      'tab-grammar': '4. Grammar & Editing (Pg 131-132)',
+      'tab-writing': '5. Writing, Listening & Oral (Pg 133-135)',
+      'tab-report': '6. Submit Report'
+    };
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.className = 'tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-amber-100 flex items-center gap-1.5 transition';
+      });
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.className = 'tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg bg-white text-rose-950 font-extrabold shadow-sm flex items-center gap-1.5 transition';
+      }
+
+      visitedTabs.add(tabId);
+      updateProgressUI();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function updateProgressUI() {
+      const count = visitedTabs.size;
+      document.getElementById('tabsVisitedDisplay').innerText = `${count} / 6`;
+      const pct = Math.min(100, Math.round((count / 6) * 50 + (currentScore / 60) * 50));
+      document.getElementById('overallProgress').style.width = `${pct}%`;
+      document.getElementById('hiddenSectionsVisited').value = Array.from(visitedTabs).map(t => tabLabels[t] || t).join(', ');
+    }
+
+    function addScore(key, pts) {
+      if (!answeredItems.has(key)) {
+        answeredItems.add(key);
+        currentScore = Math.min(60, currentScore + pts);
+        document.getElementById('scoreDisplay').innerText = currentScore;
+        document.getElementById('reportScoreDisplay').innerText = `${currentScore} / 60`;
+        document.getElementById('hiddenScore').value = `${currentScore} / 60`;
+        updateProgressUI();
+      }
+    }
+
+    // ==========================================
+    // 3. INTERACTIVE TIMELINE (TAB 1)
+    // ==========================================
+    const timelineData = {
+      1: {
+        title: "📅 October 10, 1910 — Birth & Medical Dreams in Sholapur",
+        en: "Born in a lower-middle-class family in Sholapur, Maharashtra. A vivacious child, he graduated in medicine from G.S. Medical College, Bombay.",
+        te: "తెలుగు వివరణ: డా. ద్వారకానాథ్ కోట్నిస్ 1910 అక్టోబర్ 10న మహారాష్ట్రలోని షోలాపూర్‌లో ఒక దిగువ మధ్యతరగతి కుటుంబంలో జన్మించారు. చిన్నప్పటి నుండి ఎంతో ఉత్సాహవంతుడైన ఆయన బొంబాయిలోని జి.ఎస్. మెడికల్ కాలేజీ నుండి వైద్య విద్యను పూర్తి చేశారు."
+      },
+      2: {
+        title: "📅 September 1938 — Five-Doctor Indian Medical Mission to China",
+        en: "Following General Zhu De's request to Nehru and arrangements by Netaji Subhash Chandra Bose, Dr. Kotnis went to China with M. Atal, M. Cholkar, B.K. Basu, and D. Mukerji.",
+        te: "తెలుగు వివరణ: చైనా జనరల్ ఝూ డే అభ్యర్థన మేరకు నేతాజీ సుభాష్ చంద్రబోస్ ఏర్పాటు చేసిన 5గురు డాక్టర్ల భారత వైద్య బృందంలో సభ్యునిగా 1938 సెప్టెంబర్‌లో కోట్నిస్ చైనాకు వెళ్లారు. మిగతా వారు తిరిగి వచ్చినా ఆయనే అక్కడే ఉండిపోయారు."
+      },
+      3: {
+        title: "📅 1940 — 72 Hours Non-Stop Surgery & Plague Vaccine Trial",
+        en: "During a long-drawn battle against Japanese troops, Dr. Kotnis performed operations for 72 hours without sleep (50 operations/day for a fortnight) and tested a plague vaccine on himself.",
+        te: "తెలుగు వివరణ: 1940 యుద్ధంలో నిద్ర లేకుండా ఏకధాటిగా 72 గంటల పాటు ఆపరేషన్లు చేశారు. అలాగే సైనికులకు సోకిన ప్రమాదకరమైన ప్లేగు వ్యాధిని అరికట్టడానికి వ్యాక్సిన్‌ను స్వయంగా తనపైనే పరీక్షించుకున్నారు."
+      },
+      4: {
+        title: "📅 November 1941 & August 23, 1942 — Marriage to Guo Qinglan & Son 'Yin Hua'",
+        en: "Married Chinese nurse Guo Qinglan in Nov 1941. Their son born on Aug 23, 1942 was named 'Yin Hua' ('Yin' = India, 'Hua' = China). He also became First President of Bethune International Peace Hospital.",
+        te: "తెలుగు వివరణ: నవంబర్ 1941లో నర్సు గువో కింగ్లాన్‌ను వివాహం చేసుకున్నారు. 1942 ఆగస్టు 23న పుట్టిన కొడుకుకు భారత్ (Yin) - చైనా (Hua) పేర్లను కలిపి 'యిన్ హువా' అని పేరు పెట్టారు."
+      },
+      5: {
+        title: "📅 December 9, 1942 — Martyrdom at Age 32",
+        en: "Exhausted by frontline military hardships and epilepsy, Dr. Kotnis passed away on Dec 9, 1942 at age 32 and was buried in the Heroes Courtyard, Nanquan Village.",
+        te: "తెలుగు వివరణ: యుద్ధభూమిలోని తీవ్రమైన శ్రమ మరియు మూర్ఛ వ్యాధి (epilepsy) కారణంగా 1942 డిసెంబర్ 9న కేవలం 32 ఏళ్ల వయసులో అమరులయ్యారు. నాన్క్వాన్ గ్రామంలోని 'హీరోస్ కోర్ట్‌యార్డ్'లో ఆయనను ఖననం చేశారు."
+      },
+      6: {
+        title: "📅 1976, 1982 & 1993 — Memorial Hall & Commemorative Stamps",
+        en: "China built a grand Memorial Hall in Shijiazhuang (1976). Both China (1982) and India (1993) honoured him with postage stamps. Mrs. Guo kept her India bond alive till her passing on June 28, 2012.",
+        te: "తెలుగు వివరణ: 1976లో చైనా ప్రభుత్వం షిజియాజువాంగ్ నగరంలో స్మారక మందిరాన్ని నిర్మించింది. 1982లో చైనా, 1993లో భారత్ ఆయనపై తపాలా బిళ్ళలు విడుదల చేశాయి."
+      }
+    };
+
+    function showTimeline(step) {
+      const d = timelineData[step];
+      document.getElementById('tlTitle').innerText = d.title;
+      document.getElementById('tlEn').innerText = d.en;
+      document.getElementById('tlTe').innerText = d.te;
+      for (let i = 1; i <= 6; i++) {
+        const b = document.getElementById(`tl-btn-${i}`);
+        b.className = i === step
+          ? "p-2.5 rounded-xl border-2 border-rose-600 bg-rose-50 text-center space-y-1 transition shadow-xs"
+          : "p-2.5 rounded-xl border-2 border-slate-200 bg-slate-50 text-center space-y-1 transition";
+      }
+    }
+
+    // ==========================================
+    // 4. QUIZ & VOCABULARY MATCH HANDLERS
+    // ==========================================
+    function checkQuiz(qNum, selected, correct) {
+      const exp = document.getElementById(`qz-exp-${qNum}`);
+      exp.classList.remove('hidden');
+      ['a', 'b', 'c'].forEach(opt => {
+        document.getElementById(`qz-${qNum}-${opt}`).className = "w-full text-left px-3 py-2 rounded-lg border border-slate-300 bg-white text-xs sm:text-sm";
+      });
+
+      const btn = document.getElementById(`qz-${qNum}-${selected}`);
+      if (selected === correct) {
+        addScore(`qz-${qNum}`, 5);
+        btn.classList.add('!bg-emerald-600', '!text-white', '!border-emerald-600', 'font-bold');
+        exp.className = "text-xs p-2 rounded-lg bg-emerald-100 text-emerald-900 font-bold";
+        exp.innerHTML = `<i class="fa-solid fa-circle-check mr-1"></i> Correct Answer! (+5 points)`;
+      } else {
+        btn.classList.add('!bg-rose-100', '!text-rose-900', '!border-rose-400');
+        exp.className = "text-xs p-2 rounded-lg bg-rose-100 text-rose-900 font-bold";
+        exp.innerHTML = `<i class="fa-solid fa-circle-xmark mr-1"></i> Try again!`;
+      }
+    }
+
+    function checkHeartMatch(num, val, correct) {
+      if (val === correct) {
+        addScore(`heart-${num}`, 2.5);
+      }
+    }
+
+    // ==========================================
+    // 5. VOCABULARY MODAL & SPEECH SYNTHESIS
+    // ==========================================
+    function showWordModal(word, meaning) {
+      document.getElementById('modalWordTitle').innerText = word;
+      document.getElementById('modalWordMeaning').innerText = meaning;
+      document.getElementById('wordModal').classList.remove('hidden');
+      document.getElementById('modalSpeakBtn').onclick = () => speakText(`${word}. ${meaning.split('(')[0]}`);
+      speakText(word.split('(')[0]);
+    }
+
+    function closeWordModal() {
+      document.getElementById('wordModal').classList.add('hidden');
+    }
+
+    function speakText(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-IN';
+        u.rate = 0.95;
+        window.speechSynthesis.speak(u);
+      }
+    }
+
+    function stopSpeech() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    // ==========================================
+    // 6. FORMSPREE SUBMISSION HANDLER
+    // ==========================================
+    const reportForm = document.getElementById('studentReportForm');
+    reportForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const submitBtn = document.getElementById('submitReportBtn');
+      const statusBox = document.getElementById('formStatusBox');
+      const studentName = document.getElementById('studentName').value.trim();
+      const rollNo = document.getElementById('rollNumber').value.trim();
+
+      document.getElementById('hiddenTimestamp').value = new Date().toLocaleString('en-IN');
+      document.getElementById('formSubject').value = `Dr. Kotnis Unit 8A Report: ${studentName} (Roll: ${rollNo}) - Time: ${formatTime(activeSeconds)}`;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Submitting Report...`;
+
+      try {
+        const formData = new FormData(reportForm);
+        const response = await fetch(reportForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        statusBox.classList.remove('hidden');
+        if (response.ok) {
+          statusBox.className = "p-4 rounded-xl text-sm font-bold bg-emerald-500/20 border border-emerald-400 text-emerald-100";
+          statusBox.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-300 mr-1.5"></i> Great job, <strong>${studentName}</strong>! Your Study & Watch Report (Screen Time: <strong>${formatTime(activeSeconds)}</strong>, Score: <strong>${currentScore}/60</strong>) has been sent to <strong>balaswamysm@gmail.com</strong>.`;
+          submitBtn.innerHTML = `<i class="fa-solid fa-check"></i> Report Submitted Successfully`;
+        } else {
+          throw new Error('Network response not ok');
+        }
+      } catch (err) {
+        statusBox.classList.remove('hidden');
+        statusBox.className = "p-4 rounded-xl text-sm font-bold bg-amber-500/20 border border-amber-400 text-amber-100";
+        statusBox.innerHTML = `<i class="fa-solid fa-circle-info mr-1.5"></i> Submitting report via standard form post...`;
+        reportForm.submit();
+      }
+    });
+  </script>
+</body>
+</html>
